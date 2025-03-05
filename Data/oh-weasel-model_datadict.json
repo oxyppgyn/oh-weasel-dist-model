@@ -1,0 +1,138 @@
+{
+  "Data_PO": {
+    "Description":
+      "Presence-only data.",
+    "Fields": {
+      "dataSource": {
+        "Description": "The dataset this observation comes from.",
+        "Values": null
+      },
+      "dataSource_Secondary": {
+        "Description": "A secondary dataset within another. This may be used for GBIF and other aggregating sources.",
+        "Values": null
+      },
+      "sourceID": {
+        "Description": "An ID value from the source dataset if it exists.",
+        "Values": null
+      },
+      "species": {
+        "Description": "The species the record represents.",
+        "Values": ["Long-tailed weasel", "Short-tailed weasel", "Least weasel", "Unknown weasel"]
+      },
+      "dataType": {
+        "Description": "The type of data the record represents.",
+        "Values": ["Museum specimen", "Sighting report"]
+      },
+      "date": {
+        "Description": "The date associated with this record. Format as MM/DD/YYYY.",
+        "Values": null
+      },
+      "time": {
+        "Description": "The time associated with this record. Format as HH:MM as military time in the GMT -4 timezone.",
+        "Values": null
+      },
+      "latitude": {
+        "Description": "The latitude (vertical position on globe) associated with the record.",
+        "Values": null
+      },
+      "longitude": {
+        "Description": "The longitude (horizontal position on globe) associated with the record.",
+        "Values": null
+      },
+      "positionalError_meters": {
+        "Description": "The positional error (possible deviation from lat/long) in meters. If the data was taken with a GPS unit or phone, assume 0 unless otherwise stated. If this is a range, seperate the values with a colon. Example: '500:1000'.",
+        "Values": null
+      },
+      "dataNotes": {
+        "Description": "Notes from the dataset that could be useful. Up to your discression. Example: Adding 'County: Highland' when lat/long isnt available.",
+        "Values": null
+      }
+    }
+  },
+  "Data_PA_Locs": {
+    "Description": "Location/site-level information for presence-absence data.",
+    "Fields": {
+      "dataSource": {
+        "Description": "The dataset this observation comes from.",
+        "Values": null
+      },
+      "camera_site": {
+        "Description": "The camera or site name associated with the record.",
+        "Values": null
+      },
+      "deployment": {
+        "Description": "The deployment name associated with the record.",
+        "Values": null
+      },
+      "setDate": {
+        "Description": "The date this camera/deployment of a camera was deployed in the field.",
+        "Values": null
+      },
+      "retrieveDate": {
+        "Description": "The date this camera/deployment of a camera was retrieved from the field.",
+        "Values": null
+      },
+      "activeDays": {
+        "Description": "Number of days this camera/deployment of a camera was active.",
+        "Values": null
+      },
+      "latitude": {
+        "Description": "The latitude (vertical position on globe) associated with the record.",
+        "Values": null
+      },
+      "longitude": {
+        "Description": "The longitude (horizontal position on globe) associated with the record.",
+        "Values": null
+      },
+      "locFuzz": {
+        "Description": "If a the location associated with this record has been fuzzed/obscured. Boolean yes or no.",
+        "Values": [1, 0]
+      },
+      "dataNotes": {
+        "Description": "Notes from the dataset that could be useful. Up to your discression. Example: Adding 'County: Highland' when lat/long isnt available.",
+        "Values": null
+      }
+    }
+  },
+  "Data_PA_Obs": {
+    "Description": "Observation/image-level information for presence-absence data.",
+    "Fields": {
+      "dataSource": {
+        "Description": "The dataset this observation comes from.",
+        "Values": null
+      },
+      "camera_site": {
+        "Description": "The camera or site name associated with the record.",
+        "Values": null
+      },
+      "deployment": {
+        "Description": "The deployment name associated with the record.",
+        "Values": null
+      },
+      "date": {
+        "Description": "The date associated with this record. Format as MM/DD/YYYY. If this record represents sequence data, this field will represent the start date for the sequence. Otherwise, this is the date of the image capture.",
+        "Values": null
+      },
+      "time": {
+        "Description": "The time associated with this record. Format as HH:MM as military time in the GMT -4 timezone. If this record represents sequence data, this field will represent the start time for the sequence. Otherwise, this is the time of the image capture.",
+        "Values": null
+      },
+      "date2": {
+        "Description": "The date associated with this record. Format as MM/DD/YYYY. If this record represents sequence data, this field will represent the end date for the sequence. Otherwise, this field is blank.",
+        "Values": null
+      },
+      "time2": {
+        "Description": "The time associated with this record. Format as HH:MM as military time in the GMT -4 timezone. If this record represents sequence data, this field will represent the end time for the sequence. Otherwise, this field is blank.",
+        "Values": null
+      },
+      "species": {
+        "Description": "The species the record represents.",
+        "Values": ["Long-tailed weasel", "Short-tailed weasel", "Least weasel", "Unknown weasel"]
+      },
+      "dataNotes": {
+        "Description": "Notes from the dataset that could be useful. Up to your discression. Example: Adding 'County: Highland' when lat/long isnt available.",
+        "Values": null
+      }
+    }
+  }
+}
