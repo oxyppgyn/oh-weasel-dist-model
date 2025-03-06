@@ -88,6 +88,10 @@
         "Description": "If a the location associated with this record has been fuzzed/obscured. Boolean yes or no.",
         "Values": [1, 0]
       },
+       "camType": {
+        "Description": "Type of camera setup used for this camera.",
+        "Values": ["Traditional", "AHDriFT", "Mostela Box"]
+      },     
       "dataNotes": {
         "Description": "Notes from the dataset that could be useful. Up to your discression. Example: Adding 'County: Highland' when lat/long isnt available.",
         "Values": null
