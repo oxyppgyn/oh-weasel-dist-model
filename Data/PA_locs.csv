@@ -1,0 +1,808 @@
+dataSource,camera_site,deployment,setDate,retrieveDate,activeDays,camType,latitude,longitude,locFuzz,specificGeography,positionalError_meters,dataNotes,testCOV
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09,OH_Forest_Huston-Brumbaugh Nature Center_1,8/31/2019,10/1/2019,31,Traditional,40.82801,-81.07873,0,,11.1,,36
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07,OH_Forest_Huston-Brumbaugh Nature Center_10,8/31/2019,10/1/2019,31,Traditional,40.82784,-81.08641,0,,11.1,,76
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_03,OH_Forest_Huston-Brumbaugh Nature Center_11,8/31/2019,11/1/2019,62,Traditional,40.82217,-81.08987,0,,11.1,,42
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_06,OH_Forest_Huston-Brumbaugh Nature Center_12,8/31/2019,11/1/2019,62,Traditional,40.82036,-81.08981,0,,11.1,,31
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_01,OH_Forest_Huston-Brumbaugh Nature Center_13,8/30/2019,11/1/2019,63,Traditional,40.82191,-81.09728,0,,11.1,,95
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_04,OH_Forest_Huston-Brumbaugh Nature Center_14,8/30/2019,11/1/2019,63,Traditional,40.81926,-81.09647,0,,11.1,,42
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10,OH_Forest_Huston-Brumbaugh Nature Center_16,10/1/2019,11/1/2019,31,Traditional,40.82563,-81.07932,0,,11.1,,88
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_05,OH_Forest_Huston-Brumbaugh Nature Center_18,8/31/2019,11/1/2019,62,Traditional,40.81937,-81.09263,0,,11.1,,37
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_05,OH_Forest_G_Cubed_Ranch_20_05,8/29/2020,10/16/2020,48,Traditional,40.00949,-81.11494,0,,1.11,,63
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_07,OH_Forest_G_Cubed_Ranch_20_07,9/1/2020,10/16/2020,45,Traditional,40.01658,-81.12015,0,,1.11,,91
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_08,OH_Forest_G_Cubed_Ranch_20_08,9/1/2020,10/16/2020,45,Traditional,40.0166,-81.11316,0,,1.11,,59
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_09,OH_Forest_G_Cubed_Ranch_20_09,9/1/2020,10/16/2020,45,Traditional,40.01458,-81.11148,0,,1.11,,66
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_10,OH_Forest_G_Cubed_Ranch_20_10,9/2/2020,10/16/2020,44,Traditional,40.01228,-81.11451,0,,1.11,,76
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_11,OH_Forest_G_Cubed_Ranch_20_11,9/2/2020,10/16/2020,44,Traditional,40.01053,-81.11074,0,,1.11,,34
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_15,OH_Forest_G_Cubed_Ranch_20_15,9/2/2020,10/16/2020,44,Traditional,40.01613,-81.11544,0,,1.11,,22
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_16,OH_Forest_G_Cubed_Ranch_20_16,8/29/2020,10/16/2020,48,Traditional,40.00806,-81.11924,0,,1.11,,73
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_14,OH_Forest_G_Cubed_Ranch_20_14,9/2/2020,10/16/2020,44,Traditional,40.01717,-81.10914,0,,1.11,,84
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_12,OH_Forest_G_Cubed_Ranch_20_12,9/2/2020,10/16/2020,44,Traditional,40.01015,-81.10798,0,,1.11,,66
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_20_06,OH_Forest_G_Cubed_Ranch_20_06,9/1/2020,10/16/2020,45,Traditional,40.01336,-81.11769,0,,1.11,,63
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_11,OH_Forest_G_Cubed_Ranch_20_13,9/2/2020,10/16/2020,44,Traditional,40.01309,-81.10701,0,,1.11,,28
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10,OH_Forest_Huston-Brumbaugh Nature Center_20_01,8/29/2020,9/29/2020,31,Traditional,40.82563,-81.07932,0,,11.1,,32
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_08,OH_Forest_Huston-Brumbaugh Nature Center_20_02,8/29/2020,10/1/2020,33,Traditional,40.82788,-81.08277,0,,11.1,,54
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_04,OH_Forest_Huston-Brumbaugh Nature Center_20_03,10/1/2020,10/28/2020,27,Traditional,40.81926,-81.09647,0,,11.1,,30
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_06,OH_Forest_Huston-Brumbaugh Nature Center_20_04,8/24/2020,10/28/2020,65,Traditional,40.82036,-81.08981,0,,11.1,,94
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_01,OH_Forest_Huston-Brumbaugh Nature Center_20_05,8/24/2020,10/28/2020,65,Traditional,40.82191,-81.09728,0,,11.1,,91
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_03,OH_Forest_Huston-Brumbaugh Nature Center_20_06,8/24/2020,10/28/2020,65,Traditional,40.82217,-81.08987,0,,11.1,,30
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_02,OH_Forest_Huston-Brumbaugh Nature Center_20_07,8/24/2020,10/28/2020,65,Traditional,40.8219,-81.09373,0,,11.1,,91
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_05,OH_Forest_Huston-Brumbaugh Nature Center_20_08,8/24/2020,10/28/2020,65,Traditional,40.81937,-81.09263,0,,11.1,,65
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09,OH_Forest_Huston-Brumbaugh Nature Center_20_09,10/1/2020,10/28/2020,27,Traditional,40.82801,-81.07873,0,,11.1,,84
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_20_10,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07,10/1/2020,10/28/2020,27,Traditional,40.82784,-81.08641,0,,11.1,,96
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_01,OH_Forest_G_Cubed_Ranch_21_01 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.008168,-81.11962,0,,1.11,,41
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_02,OH_Forest_G_Cubed_Ranch_21_02 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.009773,-81.114822,0,,0,,42
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_04,OH_Forest_G_Cubed_Ranch_21_04 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.012293,-81.114708,0,,0,,100
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_05,OH_Forest_G_Cubed_Ranch_21_05 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.016742,-81.120115,0,,0,,11
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_06,OH_Forest_G_Cubed_Ranch_21_06 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.016191,-81.115419,0,,0,,24
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_07,OH_Forest_G_Cubed_Ranch_21_07 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.010261,-81.110876,0,,0,,25
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_08,OH_Forest_G_Cubed_Ranch_21_08 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.013923,-81.11125,0,,1.11,,8
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_09,OH_Forest_G_Cubed_Ranch_21_09 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.013463,-81.123426,0,,0,,40
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_12,OH_Forest_G_Cubed_Ranch_21_12 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.017031,-81.109043,0,,0,,47
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_11,OH_Forest_G_Cubed_Ranch_21_11 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.013105,-81.106958,0,,0,,48
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_10,OH_Forest_G_Cubed_Ranch_21_10 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.01025,-81.108074,0,,0,,55
+Snapshot USA (2019-2023),OH_Forest_G_Cubed_Ranch_21_03,OH_Forest_G_Cubed_Ranch_21_03 09/03/2021,9/3/2021,10/16/2021,43,Traditional,40.013423,-81.11781,0,,1.11,,81
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_01,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_01 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.82191,-81.09728,0,,11.1,,73
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_02,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_02 09/03/2021,9/3/2021,9/27/2021,24,Traditional,40.8219,-81.09373,0,,11.1,,8
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_03,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_03 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.82217,-81.08987,0,,11.1,,8
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_04,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_04 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.81926,-81.09647,0,,11.1,,62
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_05,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_05 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.81937,-81.09263,0,,11.1,,44
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_06,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_06 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.82036,-81.08981,0,,11.1,,10
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.827839,-81.08641,0,,11.1,,72
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.827839,-81.08641,0,,11.1,,0
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_08,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_08 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.827881,-81.08277,0,,11.1,,77
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_08,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_08 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.827881,-81.08277,0,,11.1,,95
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.828011,-81.07873,0,,11.1,,58
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.828011,-81.07873,0,,11.1,,42
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.825631,-81.07932,0,,11.1,,83
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.825631,-81.07932,0,,11.1,,55
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_11,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_11 09/03/2021,9/3/2021,9/29/2021,26,Traditional,40.82537,-81.08665,0,,11.1,,31
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_11,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_11 09/30/2021,9/30/2021,10/9/2021,9,Traditional,40.82537,-81.08665,0,,11.1,,98
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_12,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_12 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.82344,-81.08507,0,,11.1,,40
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_12,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_12 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.82344,-81.08507,0,,11.1,,5
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_13,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_13 09/03/2021,9/3/2021,9/30/2021,27,Traditional,40.82119,-81.08385,0,,11.1,,4
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_13,OH_Forest_Huston-Brumbaugh Nature Center_21_loc_13 09/30/2021,9/30/2021,11/1/2021,32,Traditional,40.82119,-81.08385,0,,11.1,,26
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_02,OH_Forest_HustonBrumbaughNatureCenter_2022_loc_02 08/30/2022,8/30/2022,10/14/2022,45,Traditional,40.8219,-81.09373,0,,11.1,,88
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_03,OH_Forest_HustonBrumbaughNatureCenter_2022_loc_03 08/31/2022,8/31/2022,11/9/2022,70,Traditional,40.82217,-81.08987,0,,11.1,,98
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_04,OH_Forest_HustonBrumbaughNatureCenter_22_loc_04 08/30/2022,8/30/2022,11/10/2022,72,Traditional,40.81926,-81.09647,0,,11.1,,63
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_05,OH_Forest_HustonBrumbaughNatureCenter_22_loc_05 08/30/2022,8/30/2022,11/9/2022,71,Traditional,40.81937,-81.09263,0,,11.1,,49
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_06,OH_Forest_HustonBrumbaughNatureCenter_22_loc_06 08/31/2022,8/31/2022,11/9/2022,70,Traditional,40.82036,-81.08981,0,,11.1,,15
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07,OH_Forest_HustonBrumbaughNatureCenter_22_loc_07 08/28/2022,8/28/2022,11/7/2022,71,Traditional,40.827839,-81.08641,0,,11.1,,38
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_08,OH_Forest_HustonBrumbaughNatureCenter_22_loc_08 08/28/2022,8/28/2022,11/7/2022,71,Traditional,40.827881,-81.08277,0,,11.1,,32
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_09,OH_Forest_HustonBrumbaughNatureCenter_22_loc_09 08/28/2022,8/28/2022,9/29/2022,32,Traditional,40.828011,-81.07873,0,,11.1,,36
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10,OH_Forest_HustonBrumbaughNatureCenter_22_loc_10 08/28/2022,8/28/2022,11/7/2022,71,Traditional,40.825631,-81.07932,0,,11.1,,36
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_11,OH_Forest_HustonBrumbaughNatureCenter_22_loc_11 08/28/2022,8/28/2022,11/7/2022,71,Traditional,40.82537,-81.08665,0,,11.1,,82
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_12,OH_Forest_HustonBrumbaughNatureCenter_22_loc_12 08/28/2022,8/28/2022,11/7/2022,71,Traditional,40.82344,-81.08507,0,,11.1,,0
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_13,OH_Forest_HustonBrumbaughNatureCenter_22_loc_13 08/28/2022,8/28/2022,11/7/2022,71,Traditional,40.82119,-81.08385,0,,11.1,,71
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_01,OH_Forest_HustonBrumbaughNatureCenter_Loc 1 08/31/2022,8/31/2022,11/10/2022,71,Traditional,40.82191,-81.09728,0,,11.1,,82
+Snapshot USA (2019-2023),OH_Forest _Athens_loc1,OH_Forest_Athens_1,9/9/2023,10/21/2023,42,Traditional,39.315669,-82.124676,0,,0,,58
+Snapshot USA (2019-2023),OH_Forest _Athens_loc10,OH_Forest_Athens_10,9/9/2023,10/16/2023,37,Traditional,39.29408,-82.11331,0,,1.11,,21
+Snapshot USA (2019-2023),OH_Forest _Athens_loc11,OH_Forest_Athens_11,9/9/2023,10/19/2023,40,Traditional,39.31341,-82.10968,0,,1.11,,11
+Snapshot USA (2019-2023),OH_Forest _Athens_loc12,OH_Forest_Athens_12,9/14/2023,10/19/2023,35,Traditional,39.31099,-82.10986,0,,1.11,,9
+Snapshot USA (2019-2023),OH_Forest _Athens_loc2,OH_Forest_Athens_2,9/9/2023,10/21/2023,42,Traditional,39.318409,-82.123907,0,,0,,76
+Snapshot USA (2019-2023),OH_Forest _Athens_loc4,OH_Forest_Athens_4,9/9/2023,10/21/2023,42,Traditional,39.32632,-82.123869,0,,0,,85
+Snapshot USA (2019-2023),OH_Forest _Athens_loc5,OH_Forest_Athens_5,9/9/2023,10/22/2023,43,Traditional,39.32326,-82.1184,0,,11.1,,26
+Snapshot USA (2019-2023),OH_Forest _Athens_loc6,OH_Forest_Athens_6,10/1/2023,10/22/2023,21,Traditional,39.3158,-82.118619,0,,0,,98
+Snapshot USA (2019-2023),OH_Forest _Athens_loc7,OH_Forest_Athens_7,9/9/2023,10/22/2023,43,Traditional,39.317047,-82.110393,0,,0,,28
+Snapshot USA (2019-2023),OH_Forest _Athens_loc8,OH_Forest_Athens_8,9/9/2023,10/22/2023,43,Traditional,39.32393,-82.11405,0,,1.11,,57
+Snapshot USA (2019-2023),OH_Forest _Athens_loc9,OH_Forest_Athens_9,9/9/2023,10/16/2023,37,Traditional,39.29534,-82.11646,0,,1.11,,53
+Snapshot USA (2019-2023),OH_Forest_HBNC_Loc13,OH_Forest_HBNC_Loc13 08/31/2023,8/31/2023,11/6/2023,67,Traditional,40.82124,-81.08372,0,,11.1,,51
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_01,OH_Forest_HBNC_Loc01 09/01/2023,9/1/2023,10/13/2023,42,Traditional,40.82191,-81.09728,0,,11.1,,56
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_02,OH_Forest_HBNC_Loc02 08/31/2023,8/31/2023,11/8/2023,69,Traditional,40.8219,-81.09373,0,,11.1,,39
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_03,OH_Forest_HBNC_Loc02 08/31/2023,9/1/2023,11/6/2023,66,Traditional,40.82217,-81.08987,0,,11.1,,9
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_04,OH_Forest_HBNC_Loc04 08/30/2023,8/30/2023,11/8/2023,70,Traditional,40.81926,-81.09647,0,,11.1,,27
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_05,OH_Forest_HBNC_Loc05 08/30/2023,8/30/2023,11/5/2023,67,Traditional,40.81937,-81.09263,0,,11.1,,48
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_06,OH_Forest_HBNC_Loc06 09/01/2023,9/1/2023,11/6/2023,66,Traditional,40.82036,-81.08979,0,,11.1,,58
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_07,OH_Forest_HBNC_Loc07 08/30/2023,8/30/2023,11/6/2023,68,Traditional,40.827839,-81.08641,0,,11.1,,84
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_10,OH_Forest_HBNC_Loc10 08/30/2023,8/30/2023,11/6/2023,68,Traditional,40.825631,-81.07932,0,,11.1,,86
+Snapshot USA (2019-2023),OH_Forest_HBNC_Loc11,OH_Forest_HBNC_Loc11 08/31/2023,8/31/2023,9/26/2023,26,Traditional,40.8254,-81.08659,0,,11.1,,97
+Snapshot USA (2019-2023),OH_Forest_HBNC_Loc11,OH_Forest_HBNC_Loc11 10/04/2023,10/4/2023,11/6/2023,33,Traditional,40.8254,-81.08659,0,,11.1,,64
+Snapshot USA (2019-2023),OH_Forest_Huston-Brumbaugh Nature Center_21_loc_12,OH_Forest_HBNC_Loc12 08/31/2023,8/31/2023,10/4/2023,34,Traditional,40.82344,-81.08507,0,,11.1,,62
+WildlifeInsights - Trail Cam Data,B,CAMB101,7/21/2022,7/30/2022,9,Traditional,40.05938,-83.7985,0,,11.1,,58
+WildlifeInsights - Trail Cam Data,B,CAMB102,7/30/2022,8/17/2022,18,Traditional,40.05938,-83.7985,0,,11.1,,97
+WildlifeInsights - Trail Cam Data,B,CAMB103,8/17/2022,9/4/2022,18,Traditional,40.05938,-83.7985,0,,11.1,,47
+WildlifeInsights - Trail Cam Data,Cam B,MEDIA100CAMB,7/13/2022,7/21/2022,8,Traditional,40.05938,-83.7985,0,,11.1,,50
+WildlifeInsights - UC Field Center SNAP,Miller 01,Miller 01,9/5/2024,11/5/2024,61,Traditional,39.28495,-84.7388,0,,11.1,,100
+WildlifeInsights - UC Field Center SNAP,Knollman 01,Knollman 01,9/5/2024,11/5/2024,61,Traditional,39.28771,-84.7444,0,,11.1,,47
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run A1 - East Bucket,Spring Run A1 East Bucket,5/30/2023,12/31/2023,215,AHDriFT,39.782627,-84.338591,0,,0,,8
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run B1 - South Bucket,Spring Run B1 South Bucket,6/7/2023,12/31/2023,207,AHDriFT,39.782304,-84.333357,0,,0,,32
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run A2 - West Bucket,Spring Run A2 West Bucket,5/30/2023,12/31/2023,215,AHDriFT,39.782633,-84.338853,0,,0,,64
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run B2 - North Bucket,Spring Run B2 North Bucket,6/7/2023,12/31/2023,207,AHDriFT,39.7823985,-84.3333456,0,,0,,9
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run A1 - East Bucket,A1_East_2024,1/1/2024,12/31/2024,365,AHDriFT,39.782627,-84.338591,0,,0,,78
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run A2 - West Bucket,A2_West_2024,1/1/2024,12/31/2024,365,AHDriFT,39.782633,-84.338853,0,,0,,37
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run B1 - South Bucket,58647ca0-efaa-481a-930d-47fec0ebad45,1/1/2024,12/31/2024,365,AHDriFT,39.7,-84.3,1,,11100,,83
+WildlifeInsights - Spring Run Wetland Exploration,Spring Run B2 - North Bucket,bd344ac3-4ddd-4f31-a01c-b5eba06f85cf,1/1/2024,12/31/2024,365,AHDriFT,39.7,-84.3,1,,11100,,79
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3F,E3F_1994BP_SP24,4/11/2024,4/15/2024,4,Traditional,39.957086,-83.881463,0,,0,,23
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3A,E3A_1010GA_SP24,4/1/2024,4/13/2024,12,Traditional,39.936773,-83.807625,0,,0,,86
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3C,E3C_1746CR_SP24,4/1/2024,4/15/2024,14,Traditional,39.946939,-83.809154,0,,0,,89
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3B,E3B_1265EB_SP24,4/3/2024,4/15/2024,12,Traditional,39.842469,-83.791639,0,,0,,51
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3E,E3E_6601FC_SP24,4/3/2024,4/15/2024,12,Traditional,39.888491,-83.68612,0,,1.11,,88
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3D,E3D_4112MI_SP24,4/6/2024,4/15/2024,9,Traditional,39.981818,-83.774625,0,,0,,66
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3G,E3G_212HA_SP24,4/1/2024,4/15/2024,14,Traditional,39.944374,-83.812232,0,,0,,71
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3H,E3H_3911SP_SP24,4/3/2024,4/15/2024,12,Traditional,39.865305,-83.780631,0,,0,,15
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3I,E3I_WITTOBS_SP24,4/1/2024,4/15/2024,14,Traditional,39.935317,-83.81657,0,,1.11,,99
+WildlifeInsights - Springfield Urban Gradient Camera Traps,E3J,E3J_525MP_SP24,4/1/2024,4/15/2024,14,Traditional,39.994539,-83.791216,0,,0,,16
+WildlifeInsights - Mostela Boxes,BR10,Delaware Location 1 Forest  06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.408482,-83.034717,0,,1.11,,39
+WildlifeInsights - Mostela Boxes,BR4,Delaware Location 3 Forest  06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.438919,-83.057981,0,,1.11,,37
+WildlifeInsights - Mostela Boxes,BR1,Big Island Location 1 Forest 06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.5857824,-83.2260942,0,,0,,42
+WildlifeInsights - Mostela Boxes,BR1,Big Island Location 2 Field  06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.5725572,-83.3058068,0,,0,,90
+WildlifeInsights - Mostela Boxes,BR1,Big Island Location 2 Forest 06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.5724645,-83.3056348,0,,0,,55
+WildlifeInsights - Mostela Boxes,BR2,Delaware Location 3 Field 06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.4085425,-83.0345952,0,,0,,89
+WildlifeInsights - Mostela Boxes,BR1,Delaware Location 2 Field 06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.4239748,-83.0189415,0,,0,,44
+WildlifeInsights - Mostela Boxes,BR1,Delaware Location 2 Forest 06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.4240016,-83.0187189,0,,0,,41
+WildlifeInsights - Mostela Boxes,BR1,Big Island Location 1 Field 06/06/2024,6/6/2024,6/20/2024,14,Mostela Box,40.5856373,-83.2260429,0,,0,,26
+WildlifeInsights - Mostela Boxes,BR3,Big Island Location 2 Field Bait,6/20/2024,7/26/2024,36,Mostela Box,40.5725572,-83.3058068,0,,0,,42
+WildlifeInsights - Mostela Boxes,BR1,Big Island Location 1 Forest Bait,6/20/2024,7/26/2024,36,Mostela Box,40.5857824,-83.2260942,0,,0,,81
+WildlifeInsights - Mostela Boxes,BR8,Big Island Location 1 Field Bait,6/20/2024,7/26/2024,36,Mostela Box,40.5856373,-83.2260429,0,,0,,22
+WildlifeInsights - Mostela Boxes,BR4,Delaware Location 3 Forest,6/20/2024,7/26/2024,36,Mostela Box,40.438919,-83.057981,0,,1.11,,36
+WildlifeInsights - Mostela Boxes,BR7,Delaware Location 3 Field Bait,6/20/2024,7/26/2024,36,Mostela Box,40.4085425,-83.0345952,0,,0,,85
+WildlifeInsights - Mostela Boxes,BR5,Delaware Location 2 Forest Bait,6/20/2024,7/26/2024,36,Mostela Box,40.4240016,-83.0187189,0,,0,,70
+WildlifeInsights - Mostela Boxes,BR9,Delaware Location 2 Field Bait,6/20/2024,7/26/2024,36,Mostela Box,40.4239748,-83.0189415,0,,0,,46
+WildlifeInsights - Mostela Boxes,BR2,Big Island Location 2 Forest Bait,6/20/2024,7/26/2024,36,Mostela Box,40.5724645,-83.3056348,0,,0,,92
+WildlifeInsights - Mostela Boxes,BR10,Delaware Location 1 Forest Bait,6/20/2024,7/26/2024,36,Mostela Box,40.408482,-83.034717,0,,1.11,,80
+WildlifeInsights - Mostela Boxes,BR2,Delaware Location 1 Field Bait,6/20/2024,7/26/2024,36,Mostela Box,40.439084,-83.057764,0,,1.11,,6
+WildlifeInsights - Tammen Reserve,#81,Tammen Reserve Plot 9 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06839,-82.4578,0,,11.1,,51
+WildlifeInsights - Tammen Reserve,#84,Tammen Reserve Plot 10 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06836,-82.4573,0,,11.1,,41
+WildlifeInsights - Tammen Reserve,#91,Tammen Reserve Plot 2 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06884,-82.45785,0,,1.11,,68
+WildlifeInsights - Tammen Reserve,#90,Tammen Reserve Plot 7 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.0687,-82.45493,0,,1.11,,59
+WildlifeInsights - Tammen Reserve,#101,Tammen Reserve Plot 6 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06872,-82.45551,0,,1.11,,37
+WildlifeInsights - Tammen Reserve,#82,Tammen Reserve Plot 5 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06876,-82.4561,0,,11.1,,97
+WildlifeInsights - Tammen Reserve,#51,Tammen Reserve Plot 4 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06878,-82.45668,0,,1.11,,45
+WildlifeInsights - Tammen Reserve,#88,Tammen Reserve Plot 3 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06881,-82.45727,0,,1.11,,56
+WildlifeInsights - Tammen Reserve,#79,Tammen Reserve Plot 29 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06741,-82.45621,0,,1.11,,21
+WildlifeInsights - Tammen Reserve,#94,Tammen Reserve Plot 8 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06841,-82.45847,0,,1.11,,37
+WildlifeInsights - Tammen Reserve,#104,Tammen Reserve Plot 1 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06886,-82.45843,0,,1.11,,95
+WildlifeInsights - Tammen Reserve,#86,Tammen Reserve Plot 43 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.0665,-82.45512,0,,1.11,,55
+WildlifeInsights - Tammen Reserve,#85,Tammen Reserve Plot 28 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06744,-82.4568,0,,11.1,,19
+WildlifeInsights - Tammen Reserve,#92,Tammen Reserve Plot 31 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06707,-82.45859,0,,1.11,,73
+WildlifeInsights - Tammen Reserve,#105,Tammen Reserve Plot 37 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06668,-82.45862,0,,1.11,,69
+WildlifeInsights - Tammen Reserve,#74,Tammen Reserve Plot 38 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06665,-82.45803,0,,1.11,,34
+WildlifeInsights - Tammen Reserve,#60,Tammen Reserve Plot 33 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06701,-82.45742,0,,1.11,,6
+WildlifeInsights - Tammen Reserve,#77,Tammen Reserve Plot 41 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06656,-82.45628,0,,1.11,,3
+WildlifeInsights - Tammen Reserve,#96,Tammen Reserve Plot 17 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06794,-82.45792,0,,1.11,,66
+WildlifeInsights - Tammen Reserve,#106,Tammen Reserve Plot 18 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06791,-82.45734,0,,1.11,,11
+WildlifeInsights - Tammen Reserve,#102,Tammen Reserve Plot 20 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06785,-82.45617,0,,1.11,,76
+WildlifeInsights - Tammen Reserve,#76,Tammen Reserve Plot 21 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06782,-82.45559,0,,1.11,,64
+WildlifeInsights - Tammen Reserve,#98,Tammen Reserve Plot 30 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06737,-82.45562,0,,1.11,,2
+WildlifeInsights - Tammen Reserve,#100,Tammen Reserve Plot 39 11/06/2021,11/6/2021,12/15/2021,39,Traditional,40.06662,-82.45745,0,,1.11,,39
+WildlifeInsights - Tammen Reserve,#104,Tammen Reserve Plot 1 08/23/2021,8/2/2021,8/23/2021,21,Traditional,40.06886,-82.45843,0,,1.11,,80
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_7,13_AEP,8/9/2021,9/28/2021,50,Traditional,39.69642068,-81.73907709,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_8,13_AEP,9/28/2021,11/16/2021,49,Traditional,39.69642068,-81.73907709,0,,0,,71
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_9,13_AEP,11/16/2021,12/22/2021,36,Traditional,39.69642068,-81.73907709,0,,0,,52
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_10,13_AEP,12/22/2021,3/20/2022,88,Traditional,39.69642068,-81.73907709,0,,0,,62
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_1,14_AEP,1/14/2021,2/6/2021,23,Traditional,39.71363977,-81.71659201,0,,0,,94
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_2,14_AEP,2/8/2021,3/14/2021,34,Traditional,39.71363977,-81.71659201,0,,0,,44
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_3,14_AEP,3/14/2021,4/11/2021,28,Traditional,39.71363977,-81.71659201,0,,0,,68
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_4,14_AEP,4/11/2021,5/12/2021,31,Traditional,39.71363977,-81.71659201,0,,0,,70
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_1,15_AEP,1/14/2021,2/4/2021,21,Traditional,39.73258372,-81.70485778,0,,0,,61
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_2,15_AEP,2/6/2021,3/14/2021,36,Traditional,39.73258372,-81.70485778,0,,0,,17
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_3,15_AEP,3/14/2021,4/11/2021,28,Traditional,39.73258372,-81.70485778,0,,0,,56
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_4,15_AEP,4/11/2021,5/12/2021,31,Traditional,39.73258372,-81.70485778,0,,0,,5
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_4,17_AEP,4/14/2021,5/13/2021,29,Traditional,39.73749935,-81.73967633,0,,0,,48
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_5,17_AEP,5/13/2021,6/23/2021,41,Traditional,39.73749935,-81.73967633,0,,0,,80
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_6,17_AEP,6/23/2021,8/15/2021,53,Traditional,39.73749935,-81.73967633,0,,0,,2
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_7,17_AEP,8/15/2021,9/28/2021,44,Traditional,39.73749935,-81.73967633,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_8,17_AEP,9/28/2021,10/31/2021,33,Traditional,39.73749935,-81.73967633,0,,0,,22
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_9,17_AEP,11/16/2021,12/22/2021,36,Traditional,39.73749935,-81.73967633,0,,0,,69
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_1,18_AEP,1/14/2021,2/7/2021,24,Traditional,39.75064269,-81.74628786,0,,0,,76
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_2,18_AEP,2/24/2021,3/20/2021,24,Traditional,39.75064269,-81.74628786,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_3,18_AEP,3/20/2021,4/14/2021,25,Traditional,39.75064269,-81.74628786,0,,0,,61
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_4,18_AEP,4/14/2021,5/13/2021,29,Traditional,39.75064269,-81.74628786,0,,0,,97
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_5,15_AEP,5/12/2021,6/23/2021,42,Traditional,39.73258372,-81.70485778,0,,0,,19
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_1,16_AEP,1/14/2021,2/7/2021,24,Traditional,39.72017475,-81.72852996,0,,0,,53
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_2,16_AEP,2/7/2021,3/20/2021,41,Traditional,39.72017475,-81.72852996,0,,0,,74
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_8,18_AEP,9/28/2021,11/16/2021,49,Traditional,39.75064269,-81.74628786,0,,0,,15
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_5,14_AEP,5/12/2021,6/20/2021,39,Traditional,39.71363977,-81.71659201,0,,0,,24
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_1,10_AEP,1/13/2021,1/14/2021,1,Traditional,39.72021827,-81.67961407,0,,0,,65
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_10,9_AEP,12/22/2021,3/20/2022,88,Traditional,39.69795996,-81.66392479,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_2,10_AEP,2/6/2021,3/13/2021,35,Traditional,39.72021827,-81.67961407,0,,0,,79
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_6,10_AEP,6/23/2021,8/10/2021,48,Traditional,39.72021827,-81.67961407,0,,0,,54
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_3,10_AEP,3/13/2021,4/11/2021,29,Traditional,39.72021827,-81.67961407,0,,0,,38
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_4,10_AEP,4/11/2021,4/18/2021,7,Traditional,39.72021827,-81.67961407,0,,0,,96
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_5,10_AEP,5/12/2021,6/22/2021,41,Traditional,39.72021827,-81.67961407,0,,0,,49
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_6,14_AEP,6/23/2021,6/28/2021,5,Traditional,39.71363977,-81.71659201,0,,0,,14
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_8,14_AEP,9/28/2021,11/16/2021,49,Traditional,39.71363977,-81.71659201,0,,0,,90
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_6,15_AEP,6/23/2021,8/15/2021,53,Traditional,39.73258372,-81.70485778,0,,0,,44
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_3,16_AEP,3/20/2021,4/14/2021,25,Traditional,39.72017475,-81.72852996,0,,0,,15
+WildlifeInsights - Carnivore Coexistence,14_AEP_Session_10,14_AEP,12/22/2021,3/20/2022,88,Traditional,39.71363977,-81.71659201,0,,0,,30
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_8,10_AEP,9/28/2021,11/16/2021,49,Traditional,39.72021827,-81.67961407,0,,0,,0
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_4,16_AEP,4/14/2021,5/13/2021,29,Traditional,39.72017475,-81.72852996,0,,0,,16
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_7,10_AEP,9/1/2021,9/28/2021,27,Traditional,39.72021827,-81.67961407,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_9,10_AEP,11/16/2021,12/21/2021,35,Traditional,39.72021827,-81.67961407,0,,0,,24
+WildlifeInsights - Carnivore Coexistence,10_AEP_Session_10,10_AEP,12/22/2021,3/20/2022,88,Traditional,39.72021827,-81.67961407,0,,0,,45
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_5,16_AEP,5/13/2021,6/23/2021,41,Traditional,39.72017475,-81.72852996,0,,0,,70
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session1_2,11_AEP,1/13/2021,1/15/2021,2,Traditional,39.73382593,-81.6790903,0,,0,,66
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_3,11_AEP,3/13/2021,4/11/2021,29,Traditional,39.73382593,-81.6790903,0,,0,,22
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_4,11_AEP,4/11/2021,5/12/2021,31,Traditional,39.73382593,-81.6790903,0,,0,,75
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_5,11_AEP,5/12/2021,6/23/2021,42,Traditional,39.73382593,-81.6790903,0,,0,,2
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_6,11_AEP,6/23/2021,8/9/2021,47,Traditional,39.73382593,-81.6790903,0,,0,,15
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_7,11_AEP,8/9/2021,9/17/2021,39,Traditional,39.73382593,-81.6790903,0,,0,,27
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_8,11_AEP,9/28/2021,11/16/2021,49,Traditional,39.73382593,-81.6790903,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_9,11_AEP,11/16/2021,12/22/2021,36,Traditional,39.73382593,-81.6790903,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,11_AEP_Session_10,11_AEP,12/22/2021,3/20/2022,88,Traditional,39.73382593,-81.6790903,0,,0,,63
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_1,12_AEP,1/13/2021,2/6/2021,24,Traditional,39.74227385,-81.69993768,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_2,12_AEP,2/6/2021,3/14/2021,36,Traditional,39.74227385,-81.69993768,0,,0,,46
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_5,18_AEP,5/13/2021,6/23/2021,41,Traditional,39.75064269,-81.74628786,0,,0,,5
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_3,12_AEP,3/14/2021,4/12/2021,29,Traditional,39.74227385,-81.69993768,0,,0,,85
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_4,12_AEP,4/11/2021,5/12/2021,31,Traditional,39.74227385,-81.69993768,0,,0,,10
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_5,12_AEP,5/12/2021,6/23/2021,42,Traditional,39.74227385,-81.69993768,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_6,12_AEP,6/23/2021,8/9/2021,47,Traditional,39.74227385,-81.69993768,0,,0,,18
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_7,12_AEP,8/9/2021,9/28/2021,50,Traditional,39.74227385,-81.69993768,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_8,12_AEP,9/28/2021,11/16/2021,49,Traditional,39.74227385,-81.69993768,0,,0,,68
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_9,12_AEP,11/16/2021,12/22/2021,36,Traditional,39.74227385,-81.69993768,0,,0,,19
+WildlifeInsights - Carnivore Coexistence,12_AEP_Session_10,12_AEP,12/22/2021,2/9/2022,49,Traditional,39.74227385,-81.69993768,0,,0,,41
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_1,13_AEP,1/14/2021,2/7/2021,24,Traditional,39.69642068,-81.73907709,0,,0,,86
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_2,13_AEP,2/7/2021,3/20/2021,41,Traditional,39.69642068,-81.73907709,0,,0,,57
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_3,13_AEP,3/20/2021,4/14/2021,25,Traditional,39.69642068,-81.73907709,0,,0,,12
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_4,13_AEP,4/14/2021,5/20/2021,36,Traditional,39.69642068,-81.73907709,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_6,18_AEP,6/23/2021,8/15/2021,53,Traditional,39.75064269,-81.74628786,0,,0,,36
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_9,18_AEP,11/17/2021,12/22/2021,35,Traditional,39.75064269,-81.74628786,0,,0,,85
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_10,18_AEP,12/22/2021,3/20/2022,88,Traditional,39.75064269,-81.74628786,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_7,15_AEP,8/15/2021,9/28/2021,44,Traditional,39.73258372,-81.70485778,0,,0,,12
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_6,16_AEP,6/23/2021,8/15/2021,53,Traditional,39.72017475,-81.72852996,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_8,15_AEP,9/28/2021,11/16/2021,49,Traditional,39.73258372,-81.70485778,0,,0,,89
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_7,16_AEP,8/15/2021,9/28/2021,44,Traditional,39.72017475,-81.72852996,0,,0,,36
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_9,15_AEP,11/16/2021,11/27/2021,11,Traditional,39.73258372,-81.70485778,0,,0,,33
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_8,16_AEP,9/28/2021,11/16/2021,49,Traditional,39.72017475,-81.72852996,0,,0,,30
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_9,16_AEP,11/16/2021,12/22/2021,36,Traditional,39.72017475,-81.72852996,0,,0,,2
+WildlifeInsights - Carnivore Coexistence,16_AEP_Session_10,16_AEP,12/22/2021,3/20/2022,88,Traditional,39.72017475,-81.72852996,0,,0,,7
+WildlifeInsights - Carnivore Coexistence,15_AEP_Session_10,15_AEP,12/22/2021,3/20/2022,88,Traditional,39.73258372,-81.70485778,0,,0,,25
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_1,17_AEP,1/14/2021,2/7/2021,24,Traditional,39.73749935,-81.73967633,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_1,19_AEP,1/14/2021,2/7/2021,24,Traditional,39.77583812,-81.75736785,0,,0,,83
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_2,17_AEP,2/7/2021,3/20/2021,41,Traditional,39.73749935,-81.73967633,0,,0,,39
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_2,19_AEP,2/7/2021,3/20/2021,41,Traditional,39.77583812,-81.75736785,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_3,19_AEP,3/20/2021,4/14/2021,25,Traditional,39.77583812,-81.75736785,0,,0,,64
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_1,8_AEP,1/14/2021,2/5/2021,22,Traditional,39.68339175,-81.67548735,0,,0,,25
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_2,8_AEP,2/6/2021,3/14/2021,36,Traditional,39.68339175,-81.67548735,0,,0,,68
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_5,13_AEP,5/13/2021,6/4/2021,22,Traditional,39.69642068,-81.73907709,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_3,8_AEP,3/14/2021,3/21/2021,7,Traditional,39.68339175,-81.67548735,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_4,8_AEP,4/11/2021,5/12/2021,31,Traditional,39.68339175,-81.67548735,0,,0,,96
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_5,8_AEP,5/12/2021,5/30/2021,18,Traditional,39.68339175,-81.67548735,0,,0,,41
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_6,8_AEP,6/23/2021,8/9/2021,47,Traditional,39.68339175,-81.67548735,0,,0,,97
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_7,8_AEP,8/9/2021,9/28/2021,50,Traditional,39.68339175,-81.67548735,0,,0,,61
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_8,8_AEP,9/28/2021,11/16/2021,49,Traditional,39.68339175,-81.67548735,0,,0,,30
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_9,8_AEP,11/16/2021,12/22/2021,36,Traditional,39.68339175,-81.67548735,0,,0,,4
+WildlifeInsights - Carnivore Coexistence,8_AEP_Session_10,8_AEP,12/22/2021,1/8/2022,17,Traditional,39.68339175,-81.67548735,0,,0,,20
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_1,9_AEP,1/13/2021,2/6/2021,24,Traditional,39.69795996,-81.66392479,0,,0,,47
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_2,9_AEP,2/6/2021,3/12/2021,34,Traditional,39.69795996,-81.66392479,0,,0,,84
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_4,9_AEP,4/11/2021,5/12/2021,31,Traditional,39.69795996,-81.66392479,0,,0,,21
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_5,9_AEP,5/12/2021,6/23/2021,42,Traditional,39.69795996,-81.66392479,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,2616d350-5d61-49ad-b5ff-af271f671d64,9_AEP,6/23/2021,8/9/2021,47,Traditional,39.3,-82,0,,111000,,97
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_7,9_AEP,8/9/2021,9/28/2021,50,Traditional,39.69795996,-81.66392479,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_8,9_AEP,9/28/2021,11/16/2021,49,Traditional,39.69795996,-81.66392479,0,,0,,95
+WildlifeInsights - Carnivore Coexistence,9_AEP_Session_9,9_AEP,11/16/2021,12/22/2021,36,Traditional,39.69795996,-81.66392479,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,18_AEP_Session_7,18_AEP,8/15/2021,9/28/2021,44,Traditional,39.75064269,-81.74628786,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,13_AEP_Session_6,13_AEP,6/23/2021,8/9/2021,47,Traditional,39.69642068,-81.73907709,0,,0,,96
+WildlifeInsights - Carnivore Coexistence,17_AEP_Session_3,17_AEP,3/20/2021,4/14/2021,25,Traditional,39.73749935,-81.73967633,0,,0,,4
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_4,19_AEP,4/14/2021,5/13/2021,29,Traditional,39.77583812,-81.75736785,0,,0,,27
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_5,19_AEP,5/13/2021,6/23/2021,41,Traditional,39.77583812,-81.75736785,0,,0,,19
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_6,19_AEP,6/23/2021,8/15/2021,53,Traditional,39.77583812,-81.75736785,0,,0,,89
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_7,19_AEP,8/15/2021,9/28/2021,44,Traditional,39.77583812,-81.75736785,0,,0,,45
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_8,19_AEP,9/28/2021,11/16/2021,49,Traditional,39.77583812,-81.75736785,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_9,19_AEP,11/16/2021,11/27/2021,11,Traditional,39.77583812,-81.75736785,0,,0,,82
+WildlifeInsights - Carnivore Coexistence,19_AEP_Session_10,19_AEP,12/22/2021,3/20/2022,88,Traditional,39.77583812,-81.75736785,0,,0,,52
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_1,20_AEP,1/14/2021,2/7/2021,24,Traditional,39.7405367,-81.76236295,0,,0,,15
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_2,20_AEP,2/7/2021,3/20/2021,41,Traditional,39.7405367,-81.76236295,0,,0,,67
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_3,20_AEP,3/20/2021,4/14/2021,25,Traditional,39.7405367,-81.76236295,0,,0,,25
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_4,20_AEP,4/14/2021,5/10/2021,26,Traditional,39.7405367,-81.76236295,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_5,20_AEP,5/13/2021,6/23/2021,41,Traditional,39.7405367,-81.76236295,0,,0,,54
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_6,20_AEP,7/30/2021,7/31/2021,1,Traditional,39.7405367,-81.76236295,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_7,20_AEP,8/15/2021,9/27/2021,43,Traditional,39.7405367,-81.76236295,0,,0,,27
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_8,20_AEP,9/28/2021,11/16/2021,49,Traditional,39.7405367,-81.76236295,0,,0,,73
+WildlifeInsights - Carnivore Coexistence,20_AEP_Session_9,20_AEP,11/16/2021,12/22/2021,36,Traditional,39.7405367,-81.76236295,0,,0,,68
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_1,21_AEP,1/14/2021,2/7/2021,24,Traditional,39.72105809,-81.7583182,0,,0,,6
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_2,21_AEP,2/7/2021,3/20/2021,41,Traditional,39.72105809,-81.7583182,0,,0,,92
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_3,21_AEP,3/20/2021,4/14/2021,25,Traditional,39.72105809,-81.7583182,0,,0,,27
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_5,21_AEP,5/13/2021,6/23/2021,41,Traditional,39.72105809,-81.7583182,0,,0,,2
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_7,21_AEP,8/15/2021,9/12/2021,28,Traditional,39.72105809,-81.7583182,0,,0,,21
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_8,21_AEP,9/28/2021,11/16/2021,49,Traditional,39.72105809,-81.7583182,0,,0,,8
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_6,21_AEP,6/23/2021,8/15/2021,53,Traditional,39.72105809,-81.7583182,0,,0,,1
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_1,25_ZAL,1/15/2021,2/16/2021,32,Traditional,39.36780429,-82.33699223,0,,0,,82
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_9,21_AEP,11/16/2021,11/27/2021,11,Traditional,39.72105809,-81.7583182,0,,0,,81
+WildlifeInsights - Carnivore Coexistence,21_AEP_Session_9.5,21_AEP,11/28/2021,11/30/2021,2,Traditional,39.72105809,-81.7583182,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_2,25_ZAL,2/13/2021,3/21/2021,36,Traditional,39.36780429,-82.33699223,0,,0,,67
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_3,25_ZAL,3/21/2021,4/18/2021,28,Traditional,39.36780429,-82.33699223,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_4,25_ZAL,4/18/2021,5/16/2021,28,Traditional,39.36780429,-82.33699223,0,,0,,41
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_5,25_ZAL,5/16/2021,6/14/2021,29,Traditional,39.36780429,-82.33699223,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_6,25_ZAL,6/14/2021,7/16/2021,32,Traditional,39.36780429,-82.33699223,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_7,25_ZAL,7/16/2021,8/20/2021,35,Traditional,39.36780429,-82.33699223,0,,0,,67
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_8,25_ZAL,8/20/2021,10/17/2021,58,Traditional,39.36780429,-82.33699223,0,,0,,48
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_9,25_ZAL,10/17/2021,11/20/2021,34,Traditional,39.36780429,-82.33699223,0,,0,,25
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_10,25_ZAL,11/20/2021,12/29/2021,39,Traditional,39.36780429,-82.33699223,0,,0,,74
+WildlifeInsights - Carnivore Coexistence,25_ZAL_Session_11,25_ZAL,12/29/2021,3/5/2022,66,Traditional,39.36780429,-82.33699223,0,,0,,66
+WildlifeInsights - Carnivore Coexistence,26_ZAL_Session_3,26_ZAL,3/21/2021,4/18/2021,28,Traditional,39.37415263,-82.31924866,0,,0,,65
+WildlifeInsights - Carnivore Coexistence,26_ZAL_Session_1,26_ZAL,1/15/2021,2/13/2021,29,Traditional,39.37415263,-82.31924866,0,,0,,59
+WildlifeInsights - Carnivore Coexistence,26_ZAL_Session_2,26_ZAL,2/13/2021,3/21/2021,36,Traditional,39.37415263,-82.31924866,0,,0,,39
+WildlifeInsights - Carnivore Coexistence,26_ZAL_Session_4,26_ZAL,4/18/2021,5/16/2021,28,Traditional,39.37415263,-82.31924866,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,26_ZAL_Session_5,26_ZAL,5/16/2021,6/14/2021,29,Traditional,39.37415263,-82.31924866,0,,0,,34
+WildlifeInsights - Carnivore Coexistence,26_ZAL Session_6,26_ZAL,6/14/2021,7/16/2021,32,Traditional,39.37415263,-82.31924866,0,,0,,15
+WildlifeInsights - Carnivore Coexistence,26_ZAL Session_7,26_ZAL,7/16/2021,8/20/2021,35,Traditional,39.37415263,-82.31924866,0,,0,,1
+WildlifeInsights - Carnivore Coexistence,26_ZAL Session_8,26_ZAL,8/20/2021,10/17/2021,58,Traditional,39.37415263,-82.31924866,0,,0,,11
+WildlifeInsights - Carnivore Coexistence,26_ZAL Session_9,26_ZAL,10/17/2021,11/20/2021,34,Traditional,39.37415263,-82.31924866,0,,0,,73
+WildlifeInsights - Carnivore Coexistence,26_ZAL Session_10,26_ZAL,11/20/2021,12/19/2021,29,Traditional,39.37415263,-82.31924866,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,26_ZAL Session_11,26_ZAL,12/29/2021,3/5/2022,66,Traditional,39.37415263,-82.31924866,0,,0,,86
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_3,33_ZAL,3/20/2021,4/17/2021,28,Traditional,39.28847114,-82.37978045,0,,0,,13
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_4,33_ZAL,4/17/2021,5/15/2021,28,Traditional,39.28847114,-82.37978045,0,,0,,87
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_5,33_ZAL,5/15/2021,6/14/2021,30,Traditional,39.28847114,-82.37978045,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_9,30_ZAL,10/17/2021,11/20/2021,34,Traditional,39.32039016,-82.38787801,0,,0,,38
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_10,30_ZAL,11/20/2021,12/29/2021,39,Traditional,39.32039016,-82.38787801,0,,0,,47
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_11,30_ZAL,12/29/2021,3/5/2022,66,Traditional,39.32039016,-82.38787801,0,,0,,48
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_1,33_ZAL,1/15/2021,2/13/2021,29,Traditional,39.28847114,-82.37978045,0,,0,,83
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_2,33_ZAL,2/13/2021,3/20/2021,35,Traditional,39.25664951,-82.38447165,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_1,30_ZAL,1/15/2021,2/9/2021,25,Traditional,39.32039016,-82.38787801,0,,0,,21
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_4,30_ZAL,4/18/2021,5/16/2021,28,Traditional,39.32039016,-82.38787801,0,,0,,92
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_5,30_ZAL,5/16/2021,6/14/2021,29,Traditional,39.32039016,-82.38787801,0,,0,,64
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_7,30_ZAL,7/16/2021,8/20/2021,35,Traditional,39.32039016,-82.38787801,0,,0,,12
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_8,30_ZAL,8/22/2021,10/17/2021,56,Traditional,39.32039016,-82.38787801,0,,0,,72
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_1,28_ZAL,1/15/2021,2/13/2021,29,Traditional,39.3045709,-82.40860133,0,,0,,44
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_2,28_ZAL,2/13/2021,3/21/2021,36,Traditional,39.3045709,-82.40860133,0,,0,,69
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_3,28_ZAL,3/22/2021,4/18/2021,27,Traditional,39.3045709,-82.40860133,0,,0,,75
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_5,28_ZAL,5/16/2021,6/14/2021,29,Traditional,39.3045709,-82.40860133,0,,0,,99
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_6,28_ZAL,6/14/2021,7/16/2021,32,Traditional,39.3045709,-82.40860133,0,,0,,21
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_7,28_ZAL,7/16/2021,8/20/2021,35,Traditional,39.3045709,-82.40860133,0,,0,,39
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_9,28_ZAL,10/17/2021,10/18/2021,1,Traditional,39.3045709,-82.40860133,0,,0,,13
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_4,28_ZAL,4/18/2021,5/16/2021,28,Traditional,39.3045709,-82.40860133,0,,0,,92
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_8,28_ZAL,8/20/2021,9/2/2021,13,Traditional,39.3045709,-82.40860133,0,,0,,14
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_10,28_ZAL,11/20/2021,11/22/2021,2,Traditional,39.3045709,-82.40860133,0,,0,,84
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_6,30_ZAL,6/14/2021,7/16/2021,32,Traditional,39.32039016,-82.38787801,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_2,30_ZAL,2/14/2021,3/21/2021,35,Traditional,39.32039016,-82.38787801,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,28_ZAL_Session_11,28_ZAL,12/29/2021,3/5/2022,66,Traditional,39.3045709,-82.40860133,0,,0,,25
+WildlifeInsights - Carnivore Coexistence,30_ZAL_Session_3,30_ZAL,3/21/2021,4/18/2021,28,Traditional,39.32039016,-82.38787801,0,,0,,78
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_9,33_ZAL,10/8/2021,11/21/2021,44,Traditional,39.28847114,-82.37978045,0,,0,,0
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_11,33_ZAL,12/29/2021,3/5/2022,66,Traditional,39.28847114,-82.37978045,0,,0,,61
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_6,33_ZAL,6/14/2021,7/17/2021,33,Traditional,39.28847114,-82.37978045,0,,0,,83
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_8,33_ZAL,8/21/2021,10/8/2021,48,Traditional,39.28847114,-82.37978045,0,,0,,78
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_1,34_ZAL,1/15/2021,2/13/2021,29,Traditional,39.28773928,-82.35708958,0,,0,,45
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_2,34_ZAL,2/13/2021,3/20/2021,35,Traditional,39.28773928,-82.35708958,0,,0,,85
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_3,34_ZAL,3/20/2021,4/17/2021,28,Traditional,39.28773928,-82.35708958,0,,0,,64
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_4,34_ZAL,4/17/2021,5/15/2021,28,Traditional,39.28773928,-82.35708958,0,,0,,94
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_6,34_ZAL,6/14/2021,7/17/2021,33,Traditional,39.28773928,-82.35708958,0,,0,,8
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_7,34_ZAL,7/17/2021,8/21/2021,35,Traditional,39.28773928,-82.35708958,0,,0,,22
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_7,33_ZAL,7/18/2021,8/21/2021,34,Traditional,39.28847114,-82.37978045,0,,0,,20
+WildlifeInsights - Carnivore Coexistence,33_ZAL_Session_10,33_ZAL,11/21/2021,12/29/2021,38,Traditional,39.28847114,-82.37978045,0,,0,,76
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_5,34_ZAL,5/15/2021,6/14/2021,30,Traditional,39.28773928,-82.35708958,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_8,34_ZAL,8/21/2021,10/8/2021,48,Traditional,39.28773928,-82.35708958,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_9,34_ZAL,10/8/2021,11/21/2021,44,Traditional,39.28773928,-82.35708958,0,,0,,67
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_10,34_ZAL,11/21/2021,12/29/2021,38,Traditional,39.28773928,-82.35708958,0,,0,,45
+WildlifeInsights - Carnivore Coexistence,34_ZAL_Session_11,34_ZAL,12/29/2021,3/6/2022,67,Traditional,39.28773928,-82.35708958,0,,0,,79
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_1,35_ZAL,1/15/2021,2/13/2021,29,Traditional,39.30075875,-82.35539922,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_2,35_ZAL,2/13/2021,3/20/2021,35,Traditional,39.30075875,-82.35539922,0,,0,,62
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_3,35_ZAL,3/20/2021,4/17/2021,28,Traditional,39.30075875,-82.35539922,0,,0,,10
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_4,35_ZAL,4/17/2021,5/15/2021,28,Traditional,39.30075875,-82.35539922,0,,0,,73
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_5,35_ZAL,5/15/2021,6/14/2021,30,Traditional,39.30075875,-82.35539922,0,,0,,26
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_6,35_ZAL,6/14/2021,7/17/2021,33,Traditional,39.30075875,-82.35539922,0,,0,,51
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_7,35_ZAL,7/17/2021,8/21/2021,35,Traditional,39.30075875,-82.35539922,0,,0,,27
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_8,35_ZAL,8/21/2021,10/8/2021,48,Traditional,39.30075875,-82.35539922,0,,0,,71
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_9,34_ZAL,10/8/2021,11/21/2021,44,Traditional,39.30075875,-82.35539922,0,,0,,80
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_10,35_ZAL,11/21/2021,12/29/2021,38,Traditional,39.30075875,-82.35539922,0,,0,,68
+WildlifeInsights - Carnivore Coexistence,35_ZAL_Session_11,35_ZAL,12/29/2021,3/5/2022,66,Traditional,39.30075875,-82.35539922,0,,0,,16
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_4,36_ZAL,4/17/2021,5/15/2021,28,Traditional,39.25975194,-82.36111796,0,,0,,61
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_10,36_ZAL,11/21/2021,12/29/2021,38,Traditional,39.25975194,-82.36111796,0,,0,,89
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_1,36_ZAL,1/15/2021,2/13/2021,29,Traditional,39.25975194,-82.36111796,0,,0,,38
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_2,36_ZAL,2/13/2021,3/20/2021,35,Traditional,39.25975194,-82.36111796,0,,0,,87
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_3,36_ZAL,3/21/2021,4/17/2021,27,Traditional,39.25975194,-82.36111796,0,,0,,36
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_5,36_ZAL,5/15/2021,6/14/2021,30,Traditional,39.25975194,-82.36111796,0,,0,,1
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_6,36_ZAL,6/14/2021,7/18/2021,34,Traditional,39.25975194,-82.36111796,0,,0,,35
+WildlifeInsights - Carnivore Coexistence,36_ZAL_Session_7,36_ZAL,7/18/2021,8/20/2021,33,Traditional,39.25975194,-82.36111796,0,,0,,100
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_2,37_ZAL,2/13/2021,3/20/2021,35,Traditional,39.26516351,-82.33808314,0,,0,,58
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_3,37_ZAL,3/20/2021,4/17/2021,28,Traditional,39.26516351,-82.33808314,0,,0,,62
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_4,37_ZAL,4/17/2021,5/15/2021,28,Traditional,39.26516351,-82.33808314,0,,0,,59
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_5,37_ZAL,5/15/2021,6/19/2021,35,Traditional,39.26516351,-82.33808314,0,,0,,73
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_6,37_ZAL,6/19/2021,7/18/2021,29,Traditional,39.26516351,-82.33808314,0,,0,,55
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_7,37_ZAL,7/18/2021,8/21/2021,34,Traditional,39.26516351,-82.33808314,0,,0,,6
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_8,37_ZAL,8/21/2021,10/8/2021,48,Traditional,39.26516351,-82.33808314,0,,0,,97
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_9,37_ZAL,10/8/2021,11/21/2021,44,Traditional,39.26516351,-82.33808314,0,,0,,64
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_11,37_ZAL,12/29/2021,3/6/2022,67,Traditional,39.26516351,-82.33808314,0,,0,,100
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_1,38_ZAL,1/15/2021,2/13/2021,29,Traditional,39.28326325,-82.33250372,0,,0,,51
+WildlifeInsights - Carnivore Coexistence,37_ZAL_Session_1,37_ZAL,1/15/2021,2/13/2021,29,Traditional,39.26516351,-82.33808314,0,,0,,19
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_2,38_ZAL,2/13/2021,3/20/2021,35,Traditional,39.28326325,-82.33250372,0,,0,,33
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_3,38_ZAL,3/20/2021,4/17/2021,28,Traditional,39.28326325,-82.33250372,0,,0,,70
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_4,38_ZAL,4/17/2021,5/15/2021,28,Traditional,39.28326325,-82.33250372,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_5,38_ZAL,5/15/2021,6/19/2021,35,Traditional,39.28326325,-82.33250372,0,,0,,61
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_6,38_ZAL,6/19/2021,7/18/2021,29,Traditional,39.28326325,-82.33250372,0,,0,,79
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_7,38_ZAL,7/19/2021,8/21/2021,33,Traditional,39.28326325,-82.33250372,0,,0,,39
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_8,38_ZAL,8/21/2021,10/8/2021,48,Traditional,39.28326325,-82.33250372,0,,0,,51
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_9,38_ZAL,10/8/2021,11/21/2021,44,Traditional,39.28326325,-82.33250372,0,,0,,84
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_10,38_ZAL,11/21/2021,12/29/2021,38,Traditional,39.28326325,-82.33250372,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,38_ZAL_Session_11,38_ZAL,12/29/2021,3/6/2022,67,Traditional,39.28326325,-82.33250372,0,,0,,74
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_1,39_ZAL,1/15/2021,2/13/2021,29,Traditional,39.30289217,-82.32966882,0,,0,,24
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_2,39_ZAL,2/13/2021,3/20/2021,35,Traditional,39.30289217,-82.32966882,0,,0,,1
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_3,39_ZAL,3/20/2021,3/22/2021,2,Traditional,39.30289217,-82.32966882,0,,0,,3
+WildlifeInsights - Carnivore Coexistence,39_ZAL_session_4,39_ZAL,4/18/2021,5/15/2021,27,Traditional,39.30289217,-82.32966882,0,,0,,24
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_5,39_ZAL,5/15/2021,6/19/2021,35,Traditional,39.30289217,-82.32966882,0,,0,,83
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_6,39_ZAL,6/19/2021,7/18/2021,29,Traditional,39.30289217,-82.32966882,0,,0,,93
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_7,39_ZAL,7/18/2021,8/21/2021,34,Traditional,39.30289217,-82.32966882,0,,0,,35
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_8,39_ZAL,8/21/2021,10/8/2021,48,Traditional,39.30289217,-82.32966882,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,39_ZAL_Session_11,39_ZAL,12/29/2021,3/6/2022,67,Traditional,39.30289217,-82.32966882,0,,0,,100
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_1,40_ZAL,1/15/2021,2/13/2021,29,Traditional,39.3005279,-82.31605074,0,,0,,71
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_2,40_ZAL,2/13/2021,3/20/2021,35,Traditional,39.3005279,-82.31605074,0,,0,,98
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_3,40_ZAL,3/20/2021,4/17/2021,28,Traditional,39.3005279,-82.31605074,0,,0,,99
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_4,40_ZAL,4/17/2021,5/15/2021,28,Traditional,39.3005279,-82.31605074,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_5,40_ZAL,5/15/2021,6/19/2021,35,Traditional,39.3005279,-82.31605074,0,,0,,19
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_6,40_ZAL,6/20/2021,7/18/2021,28,Traditional,39.3005279,-82.31605074,0,,0,,100
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_8,40_ZAL,8/21/2021,10/10/2021,50,Traditional,39.3005279,-82.31605074,0,,0,,93
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_9,40_ZAL,10/10/2021,11/21/2021,42,Traditional,39.3005279,-82.31605074,0,,0,,47
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_10,40_ZAL,11/21/2021,12/30/2021,39,Traditional,39.3005279,-82.31605074,0,,0,,20
+WildlifeInsights - Carnivore Coexistence,40_ZAL_Session_11,40_ZAL,12/30/2021,3/6/2022,66,Traditional,39.3005279,-82.31605074,0,,0,,3
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_6,41_ZAL,6/19/2021,7/18/2021,29,Traditional,39.27134681,-82.31096424,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_2,41_ZAL,2/13/2021,3/20/2021,35,Traditional,39.27134681,-82.31096424,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_3,41_ZAL,3/20/2021,4/17/2021,28,Traditional,39.27134681,-82.31096424,0,,0,,29
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_4,41_ZAL,4/17/2021,5/15/2021,28,Traditional,39.27134681,-82.31096424,0,,0,,62
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_1,41_ZAL,1/15/2021,2/13/2021,29,Traditional,39.27134681,-82.31096424,0,,0,,94
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_5,41_ZAL,5/15/2021,6/19/2021,35,Traditional,39.27134681,-82.31096424,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_7,41_ZAL,7/18/2021,8/21/2021,34,Traditional,39.27134681,-82.31096424,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_8,41_ZAL,8/21/2021,10/10/2021,50,Traditional,39.27134681,-82.31096424,0,,0,,71
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_9,41_ZAL,10/10/2021,11/21/2021,42,Traditional,39.27134681,-82.31096424,0,,0,,79
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_10,41_ZAL,11/21/2021,12/29/2021,38,Traditional,39.27134681,-82.31096424,0,,0,,90
+WildlifeInsights - Carnivore Coexistence,41_ZAL_Session_11,41_ZAL,1/2/2021,3/6/2021,63,Traditional,39.27134681,-82.31096424,0,,0,,6
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_5,42_VIN,5/14/2021,6/16/2021,33,Traditional,39.16991911,-82.38550704,0,,0,,0
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_6,42_VIN,6/16/2021,7/17/2021,31,Traditional,39.16991911,-82.38550704,0,,0,,12
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_1_2,42_VIN,1/16/2021,3/13/2021,56,Traditional,39.16991911,-82.38550704,0,,0,,99
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_3,42_VIN,3/13/2021,4/10/2021,28,Traditional,39.16991911,-82.38550704,0,,0,,46
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_4,42_VIN,4/10/2021,5/15/2021,35,Traditional,39.16991911,-82.38550704,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_7,42_VIN,7/17/2021,9/3/2021,48,Traditional,39.16991911,-82.38550704,0,,0,,47
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_8,42_VIN,9/3/2021,10/10/2021,37,Traditional,39.16991911,-82.38550704,0,,0,,30
+WildlifeInsights - Carnivore Coexistence,42_VIN_Session_9,42_VIN,10/10/2021,11/14/2021,35,Traditional,39.16991911,-82.38550704,0,,0,,52
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_1_2,43_VIN,1/16/2021,3/13/2021,56,Traditional,39.17108851,-82.40567355,0,,0,,38
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_3,43_VIN,3/14/2021,4/10/2021,27,Traditional,39.17108851,-82.40567355,0,,0,,54
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_4,43_VIN,5/12/2021,5/14/2021,2,Traditional,39.17108851,-82.40567355,0,,0,,10
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_5,43_VIN,5/14/2021,6/16/2021,33,Traditional,39.17108851,-82.40567355,0,,0,,97
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_6,43_VIN,6/16/2021,7/17/2021,31,Traditional,39.17108851,-82.40567355,0,,0,,48
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_7,43_VIN,7/17/2021,9/3/2021,48,Traditional,39.17108851,-82.40567355,0,,0,,90
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_8,43_VIN,9/3/2021,10/10/2021,37,Traditional,39.17108851,-82.40567355,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_9,43_VIN,10/10/2021,11/14/2021,35,Traditional,39.17108851,-82.40567355,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_10,43_VIN,11/15/2021,12/18/2021,33,Traditional,39.17108851,-82.40567355,0,,0,,86
+WildlifeInsights - Carnivore Coexistence,43_VIN_Session_11,43_VIN,12/20/2021,2/19/2022,61,Traditional,39.17108851,-82.40567355,0,,0,,90
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_1,44_VIN,1/16/2021,2/14/2021,29,Traditional,39.17139552,-82.42037585,0,,0,,58
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_2,44_VIN,2/14/2021,3/13/2021,27,Traditional,39.17139552,-82.42037585,0,,0,,98
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_3,44_VIN,3/13/2021,4/10/2021,28,Traditional,39.17139552,-82.42037585,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_4,44_VIN,4/10/2021,5/14/2021,34,Traditional,39.17139552,-82.42037585,0,,0,,12
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_5,44_VIN,5/14/2021,6/16/2021,33,Traditional,39.17139552,-82.42037585,0,,0,,60
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_6,44_VIN,6/16/2021,7/17/2021,31,Traditional,39.17139552,-82.42037585,0,,0,,33
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_7,44_VIN,7/17/2021,9/3/2021,48,Traditional,39.17139552,-82.42037585,0,,0,,63
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_8,44_VIN,9/3/2021,10/10/2021,37,Traditional,39.17139552,-82.42037585,0,,0,,40
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_9,44_VIN,10/10/2021,11/14/2021,35,Traditional,39.17139552,-82.42037585,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_10,44_VIN,11/14/2021,12/18/2021,34,Traditional,39.17139552,-82.42037585,0,,0,,32
+WildlifeInsights - Carnivore Coexistence,44_VIN_Session_11,44_VIN,12/18/2021,2/19/2022,63,Traditional,39.17139552,-82.42037585,0,,0,,10
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_1,45_VIN,1/16/2021,2/14/2021,29,Traditional,39.18586985,-82.38577266,0,,0,,36
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_2,45_VIN,2/14/2021,3/13/2021,27,Traditional,39.18586985,-82.38577266,0,,0,,45
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_3,45_VIN,3/13/2021,4/10/2021,28,Traditional,39.18586985,-82.38577266,0,,0,,67
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_4,45_VIN,4/10/2021,5/14/2021,34,Traditional,39.18586985,-82.38577266,0,,0,,38
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_5,45_VIN,5/14/2021,6/16/2021,33,Traditional,39.18586985,-82.38577266,0,,0,,51
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_6,45_VIN,6/16/2021,7/17/2021,31,Traditional,39.18586985,-82.38577266,0,,0,,10
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_7,45_VIN,7/17/2021,9/4/2021,49,Traditional,39.18586985,-82.38577266,0,,0,,28
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_8,45_VIN,9/4/2021,10/10/2021,36,Traditional,39.18586985,-82.38577266,0,,0,,79
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_9,45_VIN,10/10/2021,11/14/2021,35,Traditional,39.18586985,-82.38577266,0,,0,,16
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_10,45_VIN,11/14/2021,12/18/2021,34,Traditional,39.18586985,-82.38577266,0,,0,,49
+WildlifeInsights - Carnivore Coexistence,45_VIN_Session_11,45_VIN,12/18/2021,2/19/2022,63,Traditional,39.18586985,-82.38577266,0,,0,,78
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_1,46_VIN,1/16/2021,1/17/2021,1,Traditional,39.1932657,-82.40459382,0,,0,,69
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_2,46_VIN,2/8/2021,3/7/2021,27,Traditional,39.1932657,-82.40459382,0,,0,,46
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_3,46_VIN,3/13/2021,4/10/2021,28,Traditional,39.1932657,-82.40459382,0,,0,,14
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_4,46_VIN,4/10/2021,5/14/2021,34,Traditional,39.1932657,-82.40459382,0,,0,,54
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_5,46_VIN,5/14/2021,6/16/2021,33,Traditional,39.1932657,-82.40459382,0,,0,,84
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_6,46_VIN,6/16/2021,7/17/2021,31,Traditional,39.1932657,-82.40459382,0,,0,,20
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_7,46_VIN,7/17/2021,9/4/2021,49,Traditional,39.1932657,-82.40459382,0,,0,,87
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_8,46_VIN,9/4/2021,10/10/2021,36,Traditional,39.1932657,-82.40459382,0,,0,,30
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_10,46_VIN,11/14/2021,12/9/2021,25,Traditional,39.1932657,-82.40459382,0,,0,,46
+WildlifeInsights - Carnivore Coexistence,46_VIN_Session_11,46_VIN,12/18/2021,2/10/2022,54,Traditional,39.1932657,-82.40459382,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_1,47_VIN,1/16/2021,2/14/2021,29,Traditional,39.19503877,-82.42334943,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_2,47_VIN,2/14/2021,3/15/2021,29,Traditional,39.19503877,-82.42334943,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_3,47_VIN,3/13/2021,4/10/2021,28,Traditional,39.19503877,-82.42334943,0,,0,,59
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_4,47_VIN,4/10/2021,5/14/2021,34,Traditional,39.19503877,-82.42334943,0,,0,,31
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_5,47_VIN,5/14/2021,6/16/2021,33,Traditional,39.19503877,-82.42334943,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_6,47_VIN,6/16/2021,7/17/2021,31,Traditional,39.19503877,-82.42334943,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_7,47_VIN,7/17/2021,9/4/2021,49,Traditional,39.19503877,-82.42334943,0,,0,,66
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_8,47_VIN,9/4/2021,10/10/2021,36,Traditional,39.19503877,-82.42334943,0,,0,,93
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_9,47_VIN,10/10/2021,11/14/2021,35,Traditional,39.19503877,-82.42334943,0,,0,,7
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_10,47_VIN,11/14/2021,11/18/2021,4,Traditional,39.19503877,-82.42334943,0,,0,,35
+WildlifeInsights - Carnivore Coexistence,47_VIN_Session_11,47_VIN,12/18/2021,2/19/2022,63,Traditional,39.19503877,-82.42334943,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_1,48_VIN,1/16/2021,2/14/2021,29,Traditional,39.21508414,-82.401875,0,,0,,75
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_2,48_VIN,2/14/2021,3/13/2021,27,Traditional,39.21508414,-82.401875,0,,0,,0
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_3,48_VIN,3/13/2021,4/10/2021,28,Traditional,39.21508414,-82.401875,0,,0,,17
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_4,48_VIN,4/10/2021,5/14/2021,34,Traditional,39.21508414,-82.401875,0,,0,,82
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_5,48_VIN,5/14/2021,6/16/2021,33,Traditional,39.21508414,-82.401875,0,,0,,70
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_6,48_VIN,6/16/2021,7/17/2021,31,Traditional,39.21508414,-82.401875,0,,0,,91
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_7,48_VIN,7/17/2021,9/4/2021,49,Traditional,39.21508414,-82.401875,0,,0,,29
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_8,48_VIN,9/4/2021,9/26/2021,22,Traditional,39.21508414,-82.401875,0,,0,,17
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_9,48_VIN,10/10/2021,11/14/2021,35,Traditional,39.21508414,-82.401875,0,,0,,70
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_10,48_VIN,11/15/2021,11/27/2021,12,Traditional,39.21508414,-82.401875,0,,0,,59
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_10.5,48_VIN,11/27/2021,12/16/2021,19,Traditional,39.21508414,-82.401875,0,,0,,6
+WildlifeInsights - Carnivore Coexistence,48_VIN_Session_11,48_VIN,12/19/2021,2/19/2022,62,Traditional,39.21508414,-82.401875,0,,0,,18
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_1,49_VIN,1/16/2021,2/14/2021,29,Traditional,39.21745398,-82.36996648,0,,0,,7
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_2,49_VIN,2/14/2021,3/13/2021,27,Traditional,39.21745398,-82.36996648,0,,0,,85
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_3,49_VIN,3/13/2021,4/10/2021,28,Traditional,39.21745398,-82.36996648,0,,0,,10
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_5,49_VIN,5/14/2021,6/16/2021,33,Traditional,39.21745398,-82.36996648,0,,0,,93
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_6,49_VIN,6/16/2021,6/23/2021,7,Traditional,39.21745398,-82.36996648,0,,0,,75
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_7,49_VIN,7/17/2021,11/4/2021,110,Traditional,39.21745398,-82.36996648,0,,0,,1
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_8,49_VIN,9/4/2021,10/10/2021,36,Traditional,39.21745398,-82.36996648,0,,0,,54
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_9,49_VIN,10/10/2021,11/14/2021,35,Traditional,39.21745398,-82.36996648,0,,0,,42
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_10,49_VIN,11/14/2021,12/17/2021,33,Traditional,39.21745398,-82.36996648,0,,0,,81
+WildlifeInsights - Carnivore Coexistence,49_VIN_Session_11,49_VIN,12/18/2021,2/19/2022,63,Traditional,39.21745398,-82.36996648,0,,0,,23
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_1,50_VIN,1/16/2021,2/14/2021,29,Traditional,39.22640213,-82.34839597,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_2,50_VIN,2/14/2021,3/13/2021,27,Traditional,39.22640213,-82.34839597,0,,0,,73
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_3,50_VIN,3/13/2021,4/10/2021,28,Traditional,39.22640213,-82.34839597,0,,0,,67
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_5,50_VIN,5/15/2021,6/16/2021,32,Traditional,39.22640213,-82.34839597,0,,0,,12
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_6,50_VIN,6/16/2021,7/17/2021,31,Traditional,39.22640213,-82.34839597,0,,0,,56
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_7,50_VIN,7/17/2021,9/4/2021,49,Traditional,39.22640213,-82.34839597,0,,0,,17
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_8,50_VIN,9/4/2021,10/10/2021,36,Traditional,39.22640213,-82.34839597,0,,0,,65
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_9,50_VIN,10/10/2021,11/14/2021,35,Traditional,39.22640213,-82.34839597,0,,0,,75
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_10,50_VIN,11/14/2021,12/18/2021,34,Traditional,39.22640213,-82.34839597,0,,0,,66
+WildlifeInsights - Carnivore Coexistence,50_VIN_Session_11,50_VIN,12/18/2021,2/19/2022,63,Traditional,39.22640213,-82.34839597,0,,0,,19
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_1,7_AEP,1/13/2021,2/6/2021,24,Traditional,39.64641353,-81.70247285,0,,0,,71
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_2,7_AEP,2/6/2021,3/14/2021,36,Traditional,39.64641353,-81.70247285,0,,0,,37
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_3,7_AEP,3/14/2021,4/11/2021,28,Traditional,39.64641353,-81.70247285,0,,0,,87
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_4,7_AEP,4/11/2021,5/12/2021,31,Traditional,39.64641353,-81.70247285,0,,0,,4
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_5,7_AEP,5/12/2021,6/22/2021,41,Traditional,39.64641353,-81.70247285,0,,0,,29
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_6,7_AEP,6/22/2021,8/9/2021,48,Traditional,39.64641353,-81.70247285,0,,0,,100
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_7,7_AEP,8/9/2021,9/28/2021,50,Traditional,39.64641353,-81.70247285,0,,0,,68
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_8,7_AEP,9/28/2021,11/16/2021,49,Traditional,39.64641353,-81.70247285,0,,0,,71
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_9,7_AEP,11/16/2021,12/22/2021,36,Traditional,39.64641353,-81.70247285,0,,0,,32
+WildlifeInsights - Carnivore Coexistence,7_AEP_Session_10,7_AEP,12/22/2021,3/20/2022,88,Traditional,39.64641353,-81.70247285,0,,0,,88
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_1,1/15/2021,5/15/2021,120,Traditional,39.33727673,-82.3336911,0,,0,,46
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_2,2/13/2021,2/14/2021,1,Traditional,39.33727673,-82.3336911,0,,0,,76
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_3,3/21/2021,4/18/2021,28,Traditional,39.33727673,-82.3336911,0,,0,,43
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_4,4/18/2021,5/10/2021,22,Traditional,39.33727673,-82.3336911,0,,0,,79
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_5,5/16/2021,6/14/2021,29,Traditional,39.33727673,-82.3336911,0,,0,,77
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_6,6/14/2021,7/16/2021,32,Traditional,39.33727673,-82.3336911,0,,0,,42
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_7,7/16/2021,8/20/2021,35,Traditional,39.33727673,-82.3336911,0,,0,,2
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_8,8/20/2021,9/3/2021,14,Traditional,39.33727673,-82.3336911,0,,0,,34
+WildlifeInsights - Carnivore Coexistence,24_ZAL,24_ZAL_Session_11,12/29/2021,1/8/2022,10,Traditional,39.33727673,-82.3336911,0,,0,,28
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_7,51_VIN,7/18/2021,7/19/2021,1,Traditional,39.20265539,-82.35729256,0,,0,,41
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_1,51_VIN,1/16/2021,2/14/2021,29,Traditional,39.20265539,-82.35729256,0,,0,,93
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_3,51_VIN,3/13/2021,3/27/2021,14,Traditional,39.20265539,-82.35729256,0,,0,,58
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_4,51_VIN,4/10/2021,5/15/2021,35,Traditional,39.20265539,-82.35729256,0,,0,,28
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_5,51_VIN,5/15/2021,6/11/2021,27,Traditional,39.20265539,-82.35729256,0,,0,,21
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_6,51_VIN,6/16/2021,7/16/2021,30,Traditional,39.20265539,-82.35729256,0,,0,,87
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_8,51_VIN,9/4/2021,10/10/2021,36,Traditional,39.20265539,-82.35729256,0,,0,,2
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_9,51_VIN,10/10/2021,11/14/2021,35,Traditional,39.20265539,-82.35729256,0,,0,,75
+WildlifeInsights - Carnivore Coexistence,51_VIN_Session_11,51_VIN,12/18/2021,2/19/2022,63,Traditional,39.20265539,-82.35729256,0,,0,,25
+WildlifeInsights - Wild Coshocton,Bushnell,Coshocton 02/17/2018,2/17/2018,3/17/2018,28,Traditional,40.2291944,-81.7951389,0,,0,,53
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 3,HBNC 75 01/02/2020,1/2/2020,3/10/2020,68,Traditional,40.81937,-81.09263,0,,11.1,,44
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 1,RR 33 01/27/2021,1/27/2021,6/4/2021,128,Traditional,40.827839,-81.08641,0,,11.1,,39
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 6,RRN BOBCAT 2B 07/12/2021,7/12/2021,7/26/2021,14,Traditional,40.8279,-81.07956,0,,11.1,,37
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 2,RR ST 01/27/2021,1/27/2021,6/4/2021,128,Traditional,40.82756,-81.08086,0,,11.1,,42
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 4,RRS BOBCAT 3B 07/12/2021,7/12/2021,7/26/2021,14,Traditional,40.82365,-81.08461,0,,11.1,,82
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 4,HBNC 16 01/02/2020,1/2/2020,3/10/2020,68,Traditional,40.8219,-81.09373,0,,11.1,,72
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 1,RR 30 01/02/2020,1/2/2020,1/25/2020,23,Traditional,40.827881,-81.08277,0,,11.1,,42
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 2,RR S2 06/04/2021,6/4/2021,6/23/2021,19,Traditional,40.82259,-81.08425,0,,11.1,,60
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 1,RR S1 06/04/2021,6/4/2021,6/23/2021,19,Traditional,40.82133,-81.08331,0,,11.1,,62
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 6,RR NE 06/04/2021,6/4/2021,6/23/2021,19,Traditional,40.82836,-81.07813,0,,11.1,,13
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 2,RR ST 06/04/2021,6/4/2021,6/23/2021,19,Traditional,40.82756,-81.08086,0,,11.1,,24
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 1,RR 33 06/04/2021,6/4/2021,6/23/2021,19,Traditional,40.827839,-81.08641,0,,11.1,,68
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 6,RR NE 05/22/2021,3/22/2021,6/4/2021,74,Traditional,40.82836,-81.07813,0,,11.1,,91
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 2,RR S2 03/17/2021,3/17/2021,6/4/2021,79,Traditional,40.82259,-81.08425,0,,11.1,,7
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 3,RR S3 03/17/2021,3/17/2021,6/4/2021,79,Traditional,40.82573,-81.08636,0,,11.1,,37
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 3,HBNC BOBCAT 2B 07/12/2021,7/12/2021,7/26/2021,14,Traditional,40.82172,-81.08978,0,,11.1,,67
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 3,HBNC BOBCAT 2A 06/25/2021,6/25/2021,7/12/2021,17,Traditional,40.822,-81.09007,0,,11.1,,55
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 4,HBNC BOBCAT 1B 07/13/2021,7/13/2021,7/26/2021,13,Traditional,40.82183,-81.09296,0,,11.1,,49
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 4,HBNC BOBCAT 1A 06/25/2021,6/25/2021,7/13/2021,18,Traditional,40.82734,-81.0819,0,,111,,29
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 5,RRN BOBCAT 1B 07/13/2021,7/13/2021,7/26/2021,13,Traditional,40.82742,-81.08183,0,,11.1,,3
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 5,RRN BOBCAT 1A 06/23/2021,6/23/2021,7/12/2021,19,Traditional,40.82748,-81.08221,0,,11.1,,88
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 6,RRN BOBCAT 2A 06/23/2021,6/23/2021,7/12/2021,19,Traditional,40.82753,-81.07987,0,,11.1,,99
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 4,RRS BOBCAT 3A 06/23/2021,6/23/2021,7/12/2021,19,Traditional,40.82344,-81.08507,0,,11.1,,8
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 8,SNR 3B 09/14/2021,9/14/2021,9/28/2021,14,Traditional,40.82181,-81.09023,0,,11.1,,80
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 9,SNR 4A 09/14/2021,9/14/2021,9/28/2021,14,Traditional,40.82097,-81.08962,0,,11.1,,91
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 10,SNR 4B 09/14/2021,9/14/2021,9/28/2021,14,Traditional,40.82061,-81.08977,0,,11.1,,21
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 1,RR 33 08/23/2021,8/23/2021,9/3/2021,11,Traditional,40.827839,-81.08641,0,,11.1,,3
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 2,RR 30 08/23/2021,8/23/2021,9/3/2021,11,Traditional,40.827881,-81.08277,0,,11.1,,22
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 3,RR 25 08/23/2021,8/23/2021,9/3/2021,11,Traditional,40.828011,-81.07873,0,,11.1,,93
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 4,RR 16 08/23/2021,8/23/2021,9/3/2021,11,Traditional,40.825631,-81.07932,0,,11.1,,42
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 5,RRS 4 08/23/2021,8/23/2021,9/3/2021,11,Traditional,40.82537,-81.08665,0,,11.1,,34
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 6,RRS 5 08/23/2021,8/23/2021,9/3/2021,11,Traditional,40.82119,-81.08385,0,,11.1,,26
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 8,SNR 5B 09/28/2021,9/28/2021,10/13/2021,15,Traditional,40.82195,-81.08955,0,,11.1,,94
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 7,SNR 5A 09/28/2021,9/28/2021,12/13/2021,76,Traditional,40.82201,-81.08971,0,,11.1,,73
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 9,SNR 6A 09/28/2021,9/28/2021,10/13/2021,15,Traditional,40.82098,-81.08707,0,,11.1,,94
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 1,RR 33 11/01/2021,11/1/2021,12/3/2021,32,Traditional,40.827839,-81.08641,0,,11.1,,96
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 2,RR 30 11/01/2021,11/1/2021,12/3/2021,32,Traditional,40.827881,-81.08277,0,,11.1,,72
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 6,RRS BOBCAT 3A 11/01/2021,11/1/2021,12/9/2021,38,Traditional,40.82344,-81.08507,0,,11.1,,61
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 9,BALL BOBCAT 2A 12/02/2021,12/2/2021,12/21/2021,19,Traditional,40.67205,-81.30842,0,,1.11,,45
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 3,RR 25 11/01/2021,11/1/2021,12/3/2021,32,Traditional,40.828011,-81.07873,0,,11.1,,80
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Reconyx Camera 4,RR 16 11/01/2021,11/1/2021,12/3/2021,32,Traditional,40.825631,-81.07932,0,,11.1,,29
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 5,RRS 4 11/01/2021,11/1/2021,12/9/2021,38,Traditional,40.82537,-81.08665,0,,11.1,,23
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 7,HBNC 74 11/19/2021,11/19/2021,12/9/2021,20,Traditional,40.82036,-81.08981,0,,11.1,,29
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 10,Ball Loc 3 12/02/2021,12/2/2021,12/21/2021,19,Traditional,40.67391,-81.30831,0,,1.11,,63
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 8,SNR 10B 11/05/2021,11/5/2021,11/19/2021,14,Traditional,40.81942,-81.0939,0,,111,,6
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 7,SNR 10A 11/05/2021,11/5/2021,11/19/2021,14,Traditional,40.81907,-81.08987,0,,11.1,,54
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 10,SNR 6B 09/28/2021,9/28/2021,10/13/2021,15,Traditional,40.82087,-81.08728,0,,11.1,,40
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 7,SNR 1A 08/31/2021,8/31/2021,9/14/2021,14,Traditional,40.82299,-81.0973,0,,111,,53
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 8,SNR 1B 08/31/2021,8/31/2021,9/14/2021,14,Traditional,40.82247,-81.0971,0,,111,,13
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 9,SNR 2A 08/31/2021,8/31/2021,9/14/2021,14,Traditional,40.82216,-81.09374,0,,11.1,,74
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 10,SNR 2B 08/31/2021,8/31/2021,9/14/2021,14,Traditional,40.82201,-81.09367,0,,11.1,,50
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 7,SNR 3A 09/14/2021,9/14/2021,9/28/2021,14,Traditional,40.82195,-81.09018,0,,11.1,,37
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 1,BALL BOBCAT 1A 06/24/2021,6/24/2021,7/13/2021,19,Traditional,40.67254,-81.31033,0,,1.11,,33
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 2,BALL BOBCAT 2A 06/24/2021,6/24/2021,7/13/2021,19,Traditional,40.67205,-81.30842,0,,1.11,,58
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 1,BALL BOBCAT 1B 07/12/2021,7/12/2021,7/26/2021,14,Traditional,40.8227,-81.08996,0,,11.1,,24
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 2,BALL BOBCAT 2B 07/13/2021,7/13/2021,7/26/2021,13,Traditional,40.6727,-81.30692,0,,1.11,,36
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 3,HBNC 43 11/01/2021,11/1/2021,12/9/2021,38,Traditional,40.81926,-81.09647,0,,11.1,,97
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning Camera 4,HBNC 75 11/01/2021,11/1/2021,12/9/2021,38,Traditional,40.81937,-81.09263,0,,11.1,,99
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Browning 7,RRS 5 11/19/2021,11/19/2021,12/9/2021,20,Traditional,40.82119,-81.08385,0,,11.1,,51
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,GardePro 1,West side 9/20/24,9/20/2024,10/14/2024,24,Traditional,40.8242,-81.0946,0,,111,,17
+WildlifeInsights - cb's place Mammal Monitoring,Cam3,HabPart FA24 Cam 3 River,10/1/2024,12/15/2024,75,Traditional,39.80433,-83.77831,0,,1.11,,41
+WildlifeInsights - cb's place Mammal Monitoring,A,CB's Wetland Cam A SP24,2/1/2024,2/8/2024,7,Traditional,39.80433,-83.77831,0,,1.11,,80
+WildlifeInsights - cb's place Mammal Monitoring,B,CB's Shrubland Cam B SP2024,2/1/2024,2/8/2024,7,Traditional,39.80373,-83.77673,0,,1.11,,14
+WildlifeInsights - cb's place Mammal Monitoring,C,CB's Grass/Shrubland Cam C SP24,2/1/2024,2/8/2024,7,Traditional,39.80291,-83.77628,0,,1.11,,33
+WildlifeInsights - cb's place Mammal Monitoring,D,CB's Woodland Cam D SP24,2/1/2024,2/8/2024,7,Traditional,39.80279,-83.7782,0,,11.1,,85
+WildlifeInsights - cb's place Mammal Monitoring,E,CB's Wetland Cam E SP24,2/1/2024,2/21/2024,20,Traditional,39.80433,-83.77831,0,,1.11,,18
+WildlifeInsights - 2023 Camera Trap Lab,Reagan_Elk_36,Reagan_Elk_36,2/21/2023,2/28/2023,7,Traditional,39.3236,-82.11594,0,,1.11,,7
+WildlifeInsights - 2023 Camera Trap Lab,Reagan_Elk_35,Reagan_Elk_35,2/21/2023,2/28/2023,7,Traditional,39.3236,-82.11594,0,,1.11,,5
+WildlifeInsights - 2023 Camera Trap Lab,Katelyn_Olivia_26,Katelyn_Olivia_26,2/21/2023,2/28/2023,7,Traditional,39.32044,-82.11181,0,,1.11,,53
+WildlifeInsights - 2023 Camera Trap Lab,Katelyn_Olivia_23,Katelyn_Olivia_23,2/21/2023,2/28/2023,7,Traditional,39.32044,-82.11181,0,,1.11,,79
+WildlifeInsights - 2023 Camera Trap Lab,Kiara_Sydney_37,Kiara_Sydney_37,2/21/2023,2/28/2023,7,Traditional,39.322777,-82.114312,0,,0,,55
+WildlifeInsights - 2023 Camera Trap Lab,Ashley_Ashley_46,Ashley_Ashley_46,2/21/2023,2/28/2023,7,Traditional,39.32218,-82.11474,0,,1.11,,32
+WildlifeInsights - 2023 Camera Trap Lab,Talia_Makaylie_49,Talia_Makaylie_49,2/21/2023,2/28/2023,7,Traditional,39.32406,-82.11625,0,,1.11,,65
+WildlifeInsights - 2023 Camera Trap Lab,Talia_Makaylie_40,Talia_Makaylie_40,2/21/2023,2/28/2023,7,Traditional,39.32406,-82.11625,0,,1.11,,98
+WildlifeInsights - 2023 Camera Trap Lab,Paige_Sofia_6,Paige_Sofia_6,2/21/2023,2/28/2023,7,Traditional,39.32,-82.11,0,,1110,,19
+WildlifeInsights - 2023 Camera Trap Lab,Nick_Seth_33,Nick_Seth_33,2/21/2023,2/28/2023,7,Traditional,39.31679,-82.11557,0,,1.11,,34
+WildlifeInsights - 2023 Camera Trap Lab,Nick_Seth_2,Nick_Seth_2,2/21/2023,2/28/2023,7,Traditional,39.31679,-82.11557,0,,1.11,,27
+WildlifeInsights - 2023 Camera Trap Lab,Ashley_Ashley_45,Ashley_Ashley_45,2/21/2023,2/28/2023,7,Traditional,39.32218,-82.11474,0,,1.11,,78
+WildlifeInsights - 2023 Camera Trap Lab,Kiara_Sydney_26,Kiara_Sydney_26,2/21/2023,2/28/2023,7,Traditional,39.322777,-82.114312,0,,0,,21
+WildlifeInsights - 2023 Camera Trap Lab,Logan_Chris_43,Logan_Chris_43,2/21/2023,2/28/2023,7,Traditional,39.317269,-82.1151983,0,,0,,8
+WildlifeInsights - 2023 Camera Trap Lab,Logan_Chris_31,Logan_Chris_31,2/21/2023,2/28/2023,7,Traditional,39.317269,-82.1151983,0,,0,,59
+WildlifeInsights - 2023 Camera Trap Lab,Paige_Sofia_4,Paige_Sofia_4,2/21/2023,2/28/2023,7,Traditional,39.32,-82.11,0,,1110,,43
+Ohio Small Mammals,BIWA4S,NA,6/25/2020,10/22/2020,119,AHDriFT,40.60222164,-83.2454,0,Country: United States | State: Ohio | County: Marion | Township: Big Island,7010.285,,6
+Ohio Small Mammals,CBNP1N,NA,7/30/2020,10/22/2020,84,AHDriFT,40.07471838,-83.7444,0,Country: United States | State: Ohio | County: Champaign | Township: Urbana,7671.367,,63
+Ohio Small Mammals,CBNP1S,NA,7/30/2020,10/22/2020,84,AHDriFT,40.07471838,-83.7444,0,Country: United States | State: Ohio | County: Champaign | Township: Urbana,7671.367,,71
+Ohio Small Mammals,FCS1,NA,3/17/2019,10/5/2019,202,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,52
+Ohio Small Mammals,GRN3C,NA,4/18/2019,5/5/2019,17,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,18
+Ohio Small Mammals,PRF1N,NA,8/2/2020,10/22/2020,81,AHDriFT,40.19960474,-81.158,0,Country: United States | State: Ohio | County: Clark | Township: Moorefield,7066.263,,49
+Ohio Small Mammals,PRF1S,NA,7/30/2020,10/22/2020,84,AHDriFT,40.19960474,-81.158,0,Country: United States | State: Ohio | County: Clark | Township: Moorefield,7066.263,,27
+Ohio Small Mammals,BIWA3N,NA,7/12/2020,10/17/2020,97,AHDriFT,38.99036772,-82.8406,0,Country: United States | State: Ohio | County: Marion | Township: Marion,5536.719,,61
+Ohio Small Mammals,BIWA4N,NA,7/3/2020,10/21/2020,110,AHDriFT,40.60222164,-83.2454,0,Country: United States | State: Ohio | County: Marion | Township: Big Island,7010.285,,12
+Ohio Small Mammals,KPC3,NA,3/28/2019,10/3/2019,189,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,92
+Ohio Small Mammals,GRN1,NA,3/14/2019,10/2/2019,202,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,27
+Ohio Small Mammals,KPA3,NA,3/11/2019,9/24/2019,197,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,24
+Ohio Small Mammals,MLN1,NA,3/20/2019,10/3/2019,197,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,90
+Ohio Small Mammals,NOR2,NA,4/8/2019,10/4/2019,179,AHDriFT,39.65968514,-81.8419,0,Country: United States | State: Ohio | County: Ashtabula | Township: Morgan,6024.979,,37
+Ohio Small Mammals,RMN2,NA,3/20/2019,10/5/2019,199,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,93
+Ohio Small Mammals,WIL1,NA,3/11/2019,10/3/2019,206,AHDriFT,41.67942097,-80.5703,0,Country: United States | State: Ohio | County: Huron | Township: Richmond,5965.955,,9
+Ohio Small Mammals,WIL2,NA,3/21/2019,10/3/2019,196,AHDriFT,41.67942097,-80.5703,0,Country: United States | State: Ohio | County: Huron | Township: Richmond,5965.955,,15
+Ohio Small Mammals,WIL3,NA,4/3/2019,10/4/2019,184,AHDriFT,41.67942097,-80.5703,0,Country: United States | State: Ohio | County: Huron | Township: Richmond,5965.955,,6
+Ohio Small Mammals,A1E,NA,3/25/2020,10/2/2020,191,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,98
+Ohio Small Mammals,FCS2,NA,3/22/2019,10/4/2019,196,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,52
+Ohio Small Mammals,GRN3,NA,3/14/2019,10/5/2019,205,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,7
+Ohio Small Mammals,KPA1,NA,3/21/2019,10/3/2019,196,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,53
+Ohio Small Mammals,KPA2,NA,3/20/2019,10/4/2019,198,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,51
+Ohio Small Mammals,NOR3,NA,4/7/2019,10/5/2019,181,AHDriFT,39.65968514,-81.8419,0,Country: United States | State: Ohio | County: Ashtabula | Township: Morgan,6024.979,,73
+Ohio Small Mammals,RMW1,NA,3/27/2019,10/1/2019,188,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,56
+Ohio Small Mammals,STR3,NA,3/16/2019,10/5/2019,203,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,54
+Ohio Small Mammals,YWS2,NA,3/17/2019,10/5/2019,202,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,5
+Ohio Small Mammals,YWS3,NA,3/16/2019,10/5/2019,203,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,99
+Ohio Small Mammals,A1W,NA,3/20/2020,9/16/2020,180,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,1
+Ohio Small Mammals,MLN2,NA,4/6/2019,10/2/2019,179,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,67
+Ohio Small Mammals,NOR1,NA,3/20/2019,10/4/2019,198,AHDriFT,39.65968514,-81.8419,0,Country: United States | State: Ohio | County: Ashtabula | Township: Morgan,6024.979,,98
+Ohio Small Mammals,YWN1,NA,3/27/2019,10/4/2019,191,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,7
+Ohio Small Mammals,YWN3,NA,3/19/2019,10/4/2019,199,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,20
+Ohio Small Mammals,YWS1,NA,3/17/2019,10/5/2019,202,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,0
+Ohio Small Mammals,FCM1,NA,4/24/2019,10/5/2019,164,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,5
+Ohio Small Mammals,FCM2,NA,4/9/2019,10/4/2019,178,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,15
+Ohio Small Mammals,FCM3,NA,4/24/2019,10/1/2019,160,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,38
+Ohio Small Mammals,FCP1,NA,3/21/2019,10/2/2019,195,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,24
+Ohio Small Mammals,FCP2,NA,3/28/2019,10/1/2019,187,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,80
+Ohio Small Mammals,FCP3,NA,3/30/2019,10/1/2019,185,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,78
+Ohio Small Mammals,KPC1,NA,3/24/2019,10/4/2019,194,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,52
+Ohio Small Mammals,KPC2,NA,3/23/2019,10/4/2019,195,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,36
+Ohio Small Mammals,RMM2,NA,3/23/2019,10/2/2019,193,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,5
+Ohio Small Mammals,RMN3,NA,3/20/2019,10/5/2019,199,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,89
+Ohio Small Mammals,RMW2,NA,3/17/2019,10/5/2019,202,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,78
+Ohio Small Mammals,STR2,NA,3/17/2019,10/5/2019,202,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,73
+Ohio Small Mammals,YWN2,NA,3/26/2019,10/4/2019,192,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,55
+Ohio Small Mammals,RMM3,NA,4/5/2019,9/26/2019,174,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,51
+Ohio Small Mammals,GRN2,NA,3/16/2019,10/5/2019,203,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,66
+Ohio Small Mammals,RMM1,NA,3/19/2019,10/4/2019,199,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,25
+Ohio Small Mammals,RMN1,NA,3/27/2019,10/5/2019,192,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,47
+Ohio Small Mammals,RMW3,NA,3/17/2019,10/5/2019,202,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,11
+Ohio Small Mammals,STR1,NA,3/23/2019,10/5/2019,196,AHDriFT,41.60718054,-80.8571,0,Country: United States | State: Ohio | County: Ashtabula | Township: Rome,5704.749,,59
+Ohio Small Mammals,FCS3,NA,3/15/2019,10/4/2019,203,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,62
+Ohio Small Mammals,MLN3,NA,3/27/2019,10/3/2019,190,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,24
+Ohio Small Mammals,A1N,NA,3/20/2020,10/3/2020,197,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,24
+Ohio Small Mammals,GNR1,NA,3/14/2019,3/14/2019,0,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,94
+Ohio Small Mammals,MLN2A,NA,5/5/2019,5/6/2019,1,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,11
+Ohio Small Mammals,MLN3B,NA,5/15/2019,6/10/2019,26,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,74
+Ohio Small Mammals,MLN3A,NA,5/6/2019,6/9/2019,34,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,95
+Ohio Small Mammals,MLN3C,NA,6/10/2019,6/10/2019,0,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,90
+Ohio Small Mammals,MLN2B,NA,5/10/2019,5/15/2019,5,AHDriFT,41.53623759,-80.8572,0,Country: United States | State: Ohio | County: Ashtabula | Township: Orwell,5672.297,,10
+Ohio Small Mammals,BIWA2E,NA,6/16/2020,7/2/2020,16,AHDriFT,40.60222164,-83.2454,0,Country: United States | State: Ohio | County: Marion | Township: Big Island,7010.285,,48
+Ohio Small Mammals,BIWA2W,NA,6/29/2020,9/5/2020,68,AHDriFT,40.60222164,-83.2454,0,Country: United States | State: Ohio | County: Marion | Township: Big Island,7010.285,,23
+Ohio Small Mammals,KILA1N,NA,5/7/2022,10/22/2022,168,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,93
+Ohio Small Mammals,KILA1S,NA,5/8/2022,10/22/2022,167,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,18
+Ohio Small Mammals,KILA6E,NA,5/31/2022,6/21/2022,21,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,58
+Ohio Small Mammals,KILA6WA,NA,5/20/2022,5/20/2022,0,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,27
+Ohio Small Mammals,KILA6WB,NA,6/2/2022,6/13/2022,11,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,37
+Ohio Small Mammals,KILA6W,NA,6/29/2022,10/22/2022,115,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,44
+Ohio Small Mammals,KILB11E,NA,6/4/2022,11/10/2022,159,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,96
+Ohio Small Mammals,KILB11W,NA,5/1/2022,11/8/2022,191,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,68
+Ohio Small Mammals,KILB1E,NA,5/8/2022,10/8/2022,153,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,89
+Ohio Small Mammals,KILB1W,NA,5/2/2022,10/14/2022,165,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,31
+Ohio Small Mammals,KILB4N,NA,5/7/2022,11/9/2022,186,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,99
+Ohio Small Mammals,KILB4S,NA,5/14/2022,11/3/2022,173,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,52
+Ohio Small Mammals,KILB9E,NA,5/9/2022,11/6/2022,181,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,64
+Ohio Small Mammals,KILB9W,NA,4/27/2022,10/23/2022,179,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,32
+Ohio Small Mammals,KILC1E,NA,5/1/2022,11/7/2022,190,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,59
+Ohio Small Mammals,KILC1W,NA,4/22/2022,11/4/2022,196,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,15
+Ohio Small Mammals,KILC2N,NA,4/20/2022,11/3/2022,197,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,27
+Ohio Small Mammals,KILC2S,NA,5/9/2022,10/24/2022,168,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,26
+Ohio Small Mammals,KILC3E,NA,4/29/2022,10/25/2022,179,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,85
+Ohio Small Mammals,KILC3W,NA,4/20/2022,11/5/2022,199,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,5
+Ohio Small Mammals,KILC4N,NA,4/17/2022,10/22/2022,188,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,40
+Ohio Small Mammals,KILC4S,NA,4/21/2022,10/22/2022,184,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,72
+Ohio Small Mammals,KILC5EA,NA,9/22/2022,10/9/2022,17,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,36
+Ohio Small Mammals,KILC5E,NA,4/23/2022,10/22/2022,182,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,9
+Ohio Small Mammals,KILC5WA,NA,9/22/2022,10/11/2022,19,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,74
+Ohio Small Mammals,KILC5W,NA,4/22/2022,10/21/2022,182,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,90
+Ohio Small Mammals,KILC7E,NA,4/24/2022,10/22/2022,181,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,97
+Ohio Small Mammals,KILC7W,NA,5/1/2022,10/22/2022,174,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,50
+Ohio Small Mammals,KILC8E,NA,4/24/2022,11/5/2022,195,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,20
+Ohio Small Mammals,KILC8W,NA,4/24/2022,10/9/2022,168,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,18
+Ohio Small Mammals,KILD11E,NA,5/16/2022,11/4/2022,172,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,88
+Ohio Small Mammals,KILD11W,NA,5/16/2022,10/27/2022,164,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,12
+Ohio Small Mammals,KILD1E,NA,6/5/2022,9/9/2022,96,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,69
+Ohio Small Mammals,KILD1W,NA,7/1/2022,10/11/2022,102,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,47
+Ohio Small Mammals,KILD5N,NA,5/30/2022,10/22/2022,145,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,97
+Ohio Small Mammals,KILD5S,NA,5/25/2022,10/11/2022,139,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,94
+Ohio Small Mammals,KILE1E,NA,5/14/2022,11/4/2022,174,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,90
+Ohio Small Mammals,KILE1W,NA,5/9/2022,11/7/2022,182,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,45
+Ohio Small Mammals,KILE2E,NA,5/2/2022,10/4/2022,155,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,85
+Ohio Small Mammals,KILE6E,NA,5/2/2022,10/16/2022,167,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,91
+Ohio Small Mammals,KILE6W,NA,5/11/2022,10/4/2022,146,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,40
+Ohio Small Mammals,KILF10NA,NA,4/14/2022,6/8/2022,55,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,92
+Ohio Small Mammals,KILF10NC,NA,6/9/2022,8/11/2022,63,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,9
+Ohio Small Mammals,KILF10NE,NA,6/11/2022,6/11/2022,0,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,73
+Ohio Small Mammals,KILF10S,NA,4/23/2022,10/22/2022,182,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,97
+Ohio Small Mammals,KILF12N,NA,4/10/2022,10/13/2022,186,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,75
+Ohio Small Mammals,KILF12S,NA,4/10/2022,10/21/2022,194,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,36
+Ohio Small Mammals,KILF4N,NA,4/12/2022,11/7/2022,209,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,74
+Ohio Small Mammals,KILF4S,NA,4/14/2022,11/10/2022,210,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,24
+Ohio Small Mammals,KILG1N,NA,4/23/2022,10/4/2022,164,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,89
+Ohio Small Mammals,KILG1S,NA,4/23/2022,10/5/2022,165,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,26
+Ohio Small Mammals,KILH10N,NA,4/10/2022,10/10/2022,183,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,49
+Ohio Small Mammals,KILH10S,NA,4/12/2022,10/21/2022,192,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,27
+Ohio Small Mammals,KILH1E,NA,4/11/2022,10/14/2022,186,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,39
+Ohio Small Mammals,KILH1W,NA,5/13/2022,5/19/2022,6,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,41
+Ohio Small Mammals,KILH2N,NA,4/11/2022,9/12/2022,154,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,22
+Ohio Small Mammals,KILH2S,NA,4/10/2022,10/23/2022,196,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,41
+Ohio Small Mammals,KILH3E,NA,4/12/2022,10/23/2022,194,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,76
+Ohio Small Mammals,KILH3W,NA,4/10/2022,10/23/2022,196,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,50
+Ohio Small Mammals,KILH4E,NA,5/19/2022,11/9/2022,174,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,33
+Ohio Small Mammals,KILH4W,NA,5/17/2022,11/4/2022,171,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,10
+Ohio Small Mammals,KILH6E,NA,4/10/2022,10/22/2022,195,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,38
+Ohio Small Mammals,KILH6W,NA,4/10/2022,10/16/2022,189,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,11
+Ohio Small Mammals,KILH9N,NA,4/23/2022,9/18/2022,148,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,60
+Ohio Small Mammals,KILH9SA,NA,4/23/2022,5/19/2022,26,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,43
+Ohio Small Mammals,KILJ14EA,NA,9/23/2022,10/21/2022,28,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,12
+Ohio Small Mammals,KILJ14E,NA,5/17/2022,9/22/2022,128,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,90
+Ohio Small Mammals,KILJ14W,NA,5/28/2022,10/15/2022,140,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,55
+Ohio Small Mammals,KILJ15EA,NA,5/23/2022,10/3/2022,133,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,31
+Ohio Small Mammals,KILJ15EB,NA,6/6/2022,6/6/2022,0,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,14
+Ohio Small Mammals,KILJ15ED,NA,6/10/2022,6/10/2022,0,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,70
+Ohio Small Mammals,KILJ15W,NA,6/4/2022,9/24/2022,112,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,72
+Ohio Small Mammals,KILJ17E,NA,4/27/2022,10/16/2022,172,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,14
+Ohio Small Mammals,KILJ17W,NA,4/24/2022,10/24/2022,183,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,33
+Ohio Small Mammals,KILJ18E,NA,4/10/2022,10/16/2022,189,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,60
+Ohio Small Mammals,KILJ18W,NA,4/10/2022,10/25/2022,198,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,30
+Ohio Small Mammals,KILJ8E,NA,4/10/2022,9/24/2022,167,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,6
+Ohio Small Mammals,KILJ8W,NA,4/10/2022,10/14/2022,187,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,58
+Ohio Small Mammals,KILJ9E,NA,4/12/2022,10/9/2022,180,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,97
+Ohio Small Mammals,KILJ9W,NA,4/22/2022,10/16/2022,177,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,54
+Ohio Small Mammals,KILK4E,NA,4/23/2022,10/21/2022,181,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,0
+Ohio Small Mammals,KILK4W,NA,4/25/2022,10/22/2022,180,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,1
+Ohio Small Mammals,KILL1E,NA,5/29/2022,10/14/2022,138,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,40
+Ohio Small Mammals,KILL1W,NA,4/28/2022,10/11/2022,166,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,92
+Ohio Small Mammals,KILL2E,NA,4/29/2022,10/22/2022,176,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,54
+Ohio Small Mammals,KILL2W,NA,4/27/2022,10/22/2022,178,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,18
+Ohio Small Mammals,KILM6E,NA,5/16/2022,10/9/2022,146,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,0
+Ohio Small Mammals,KILM6W,NA,5/14/2022,10/11/2022,150,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,82
+Ohio Small Mammals,KILO4N,NA,5/9/2022,11/9/2022,184,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,90
+Ohio Small Mammals,KILO4S,NA,5/14/2022,10/10/2022,149,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,88
+Ohio Small Mammals,KILQ1N,NA,5/3/2022,11/4/2022,185,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,16
+Ohio Small Mammals,KILQ1S,NA,5/7/2022,10/29/2022,175,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,98
+Ohio Small Mammals,KILQ3N,NA,6/11/2022,10/21/2022,132,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,42
+Ohio Small Mammals,KILQ3SA,NA,9/27/2022,10/16/2022,19,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,80
+Ohio Small Mammals,KILQ3S,NA,5/11/2022,9/21/2022,133,AHDriFT,40.70967045,-83.32007207,0,Country: United States | State: Ohio | County: Wyandot | Township: Pitt | Named Area: Killdeer Plains Wildlife Area,6309.339491,,32
+Ohio Small Mammals,OSTN,NA,6/8/2023,8/31/2023,84,AHDriFT,41.56243845,-83.8468,0,Country: United States | State: Ohio | County: Lucas | Township: Swanton,5619.292,,30
+Ohio Small Mammals,OSTS,NA,8/25/2023,9/15/2023,21,AHDriFT,41.56243845,-83.8468,0,Country: United States | State: Ohio | County: Lucas | Township: Swanton,5619.292,,81
+Ohio Small Mammals,MONC295N,NA,7/22/2023,9/10/2023,50,AHDriFT,41.56243845,-83.8468,0,Country: United States | State: Ohio | County: Lucas | Township: Swanton,5619.292,,1
+Ohio Small Mammals,SPV13,NA,9/27/2021,9/27/2021,0,AHDriFT,39.60712286,-83.9861,0,Country: United States | State: Ohio | County: Greene | Township: Spring Valley,7273.246,,93
+Ohio Small Mammals,SPV2,NA,9/7/2021,9/13/2021,6,AHDriFT,39.60712286,-83.9861,0,Country: United States | State: Ohio | County: Greene | Township: Spring Valley,7273.246,,19
+Ohio Small Mammals,DORRN,NA,9/12/2023,9/20/2023,8,AHDriFT,41.09915857,-82.1231,0,Country: United States | State: Ohio | County: Lucas | Township: Spencer,1439.297,,20
+Ohio Small Mammals,DORRS,NA,6/22/2023,10/4/2023,104,AHDriFT,41.09915857,-82.1231,0,Country: United States | State: Ohio | County: Lucas | Township: Spencer,1439.297,,24
+Ohio Small Mammals,CBG9,NA,5/10/2021,5/10/2021,0,AHDriFT,40.07471838,-83.7444,0,Country: United States | State: Ohio | County: Champaign | Township: Urbana,7671.367,,61
+Ohio Small Mammals,CBG10,NA,5/27/2021,5/27/2021,0,AHDriFT,40.07471838,-83.7444,0,Country: United States | State: Ohio | County: Champaign | Township: Urbana,7671.367,,52
