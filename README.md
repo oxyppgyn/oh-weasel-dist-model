@@ -1,4 +1,4 @@
-**THIS REPO IS FOR A CURRENTLY IN PROGRESS PROJECT**
+**THIS REPO IS FOR A CURRENTLY IN PROGRESS PROJECT AND IS NOT YET FINALIZED**
 
 # Ohio Weasel Distribution Models (2025)
 This repo covers the scripts and data used to model the distribution of long-tailed, short-tailed, and least weasels in the state of Ohio. Multiple versions of this project are included here such as preliminary modeling efforts presented at the Ohio University Student Expo and the American Society of Mammalogists Annual Meeting.
