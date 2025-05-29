@@ -41,12 +41,12 @@ output: html_notebook
 
 ```{r}
 #Files
-working_directory <- 'C:\\Users\\tanne\\Desktop\\weaselModeling'
-PA_obs_path <- 'Data\\PA_obs.csv'
-PA_locs_path <- 'Data\\PA_locs.csv'
-PO_path <- 'Data\\PO.csv'
-shp_path <- 'Data\\OHBuffer\\Oh_1kmBuffer.shp'
-covar_paths <- c('Data\\Covariates\\OH_NLCD_Forest_2023.tif')
+working_directory <- 'C:\\path\\to\\working_dir'
+PA_obs_path <- 'path\\to\\PA_obs.csv'
+PA_locs_path <- 'path\\to\\PA_locs.csv'
+PO_path <- 'path\\to\\PO.csv'
+shp_path <- 'path\\to\\OHBuffer\\Oh_1kmBuffer.shp'
+covar_paths <- c('path\\to\\OH_NLCD_Forest_2023.tif')
 
 #Config
 species <- c("Long-tailed weasel", "Short-tailed weasel", "Least weasel")
