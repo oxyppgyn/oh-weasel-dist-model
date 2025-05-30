@@ -25,7 +25,7 @@ Information about the data tables can be found in [oh-weasel-model_datadict.json
 
     _The boundary can also be selected on the map on this page as long as it is includes the entire state of Ohio plus at a 1km buffer on all sides._
 
-  * In box 3A ("Raster Visualization") check "Color-relief" and "Aspect"
+  * In box 3A ("Raster Visualization") check "Color-relief" and "Aspect".
   * Click the submit button at the bottom of the page and wait for your download.
 * Run the provided Python notebook `oh-weasel-dist-model_ASM.ipynb` to create raster and polygon layers used in this analysis. This uses _arcPy_ through ArcGIS Pro, but could be done through R's geospatial libraries as well.
 * Run the provided R notebook `oh-weasel-dist-model_ASM.Rmd` to create the iSDMs used and their related distribution maps.
