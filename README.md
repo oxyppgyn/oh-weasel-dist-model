@@ -9,7 +9,7 @@ Due to some data in this dataset provided by the Ohio Department of Natural Reso
 Information about the data tables can be found in [oh-weasel-model_datadict.json](https://github.com/oxyppgyn/oh-weasel-dist-model/blob/643d11495c15efdd9e97da767acc88085d82c718/oh-weasel-model_datadict.json), which contains metadata for each field formatted as JSON.
 
 ## Rerun this Analysis
-### OU Student Expo
+### OU Student Expo ([Poster PDF](https://github.com/oxyppgyn/oh-weasel-dist-model/blob/b1d665f112f0b6d399843dc565a8ef20387e6f89/OUStudentExpo/oh-weasel-dist-model_Poster_Expo.pdf))
 * Download the [National Land Cover Database (2021)](https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/data-bundles/Annual_NLCD_LndCov_2021_CU_C1V0.tif) tiff file, which is used to derive land cover covariates.
 * Run the provided Python notebook `oh-weasel-dist-model_Expo.ipynb` to create raster and polygon layers used in this analysis. This uses _arcPy_ through ArcGIS Pro, but could be done through R's geospatial libraries as well.
 * Run the provided R notebook `oh-weasel-dist-model_Expo.Rmd` to create the iSDMs used and their related distribution maps.
