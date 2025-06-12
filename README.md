@@ -6,7 +6,7 @@ This repo covers the scripts and data used to model the distribution of long-tai
 ## Data & Documentation
 Due to some data in this dataset provided by the Ohio Department of Natural Resources and Cleveland Metroparks not being public, only part of the original dataset used for these analyses has been added to this repo. The full dataset may be available upon request. Running this analysis with a partial dataset _will_ produce differing results.
 
-Information about the data tables can be found in [oh-weasel-model_datadict.json](https://github.com/oxyppgyn/oh-weasel-dist-model/blob/643d11495c15efdd9e97da767acc88085d82c718/oh-weasel-model_datadict.json), which contains metadata for each field formatted as JSON.
+Information about the data tables can be found in `oh-weasel-model_datadict.json`, which contains metadata for each field formatted as JSON.
 
 ## Rerun this Analysis
 ### OU Student Expo
