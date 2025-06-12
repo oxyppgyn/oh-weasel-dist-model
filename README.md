@@ -14,7 +14,6 @@ Information about the data tables can be found in `oh-weasel-model_datadict.json
 * Run the provided R notebook `oh-weasel-dist-model_Expo.Rmd` to create the iSDMs used and their related distribution maps.
 
 ### American Society of Mammalogists (ASM) Annual Meeting
-* Download the [National Land Cover Database (2000)](https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/data-bundles/Annual_NLCD_LndCov_2000_CU_C1V0.tif) tiff file, which is used to derive land cover covariates.
 * Download the aspect tiff file from [STRMGL3](https://portal.opentopography.org/raster?opentopoID=OTSRTM.042013.4326.1), which is used to derive eastness and westness (aspect).
   * In box 1 ("Coordinates"), select "Manually enter selection coordinates" and use the following values:
 
