@@ -9,6 +9,8 @@ Due to some data in this dataset provided by the Ohio Department of Natural Reso
 Information about the data tables can be found in `oh-weasel-model_datadict.json`, which contains metadata for each field formatted as JSON.
 
 ## Rerun this Analysis
+All analyses were performed using R 4.4.0 via RStudio and ArcGIS Pro 3.3.0.
+
 ### OU Student Expo
 * Download the pre-generated boundary shapefile `OH_buffer_1km.shp` and covariate tiff file `OH_NLCD_Forest_2023.tif`.
 * Run the provided R notebook `oh-weasel-dist-model_Expo.Rmd` to create the iSDMs used and their related distribution maps.
