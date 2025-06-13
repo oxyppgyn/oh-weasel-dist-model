@@ -17,7 +17,7 @@
       },
       "species": {
         "Description": "The species the record represents.",
-        "Values": ["Long-tailed weasel", "Short-tailed weasel", "Least weasel", "Unknown weasel"]
+        "Values": ["Long-tailed weasel", "Short-tailed weasel", "Least weasel", "Unknown weasel", "..."]
       },
       "dataType": {
         "Description": "The type of data the record represents.",
@@ -40,11 +40,15 @@
         "Values": null
       },
       "positionalError_meters": {
-        "Description": "The positional error (possible deviation from lat/long) in meters. If the data was taken with a GPS unit or phone, assume 0 unless otherwise stated. If this is a range, seperate the values with a colon. Example: '500:1000'.",
+        "Description": "The positional error (possible deviation from lat/long) in meters. If the data was taken with a GPS unit or phone, assumed 0 unless otherwise stated. If no specific number was given, other information about the spatial error may be recorded here.",
         "Values": null
       },
       "dataNotes": {
         "Description": "Notes from the dataset that could be useful. Up to your discression. Example: Adding 'County: Highland' when lat/long isnt available.",
+        "Values": null
+      },
+      "specificGeography":{
+        "Description": "The hierarchical geography associated with the observation when latitude and longitude are not available. Levels of geography are delimited with pipe characters and keys are seperated using colons.",
         "Values": null
       }
     }
@@ -76,6 +80,10 @@
         "Description": "Number of days this camera/deployment of a camera was active.",
         "Values": null
       },
+      "camType": {
+        "Description": "Type of camera setup used for this camera.",
+        "Values": ["Traditional", "AHDriFT", "Mostela Box"]
+      }, 
       "latitude": {
         "Description": "The latitude (vertical position on globe) associated with the record.",
         "Values": null
@@ -88,10 +96,14 @@
         "Description": "If a the location associated with this record has been fuzzed/obscured. Boolean yes or no.",
         "Values": [1, 0]
       },
-       "camType": {
-        "Description": "Type of camera setup used for this camera.",
-        "Values": ["Traditional", "AHDriFT", "Mostela Box"]
-      },     
+      "specificGeography":{
+        "Description": "The hierarchical geography associated with the observation when latitude and longitude are not available. Levels of geography are delimited with pipe characters and keys are seperated using colons.",
+        "Values": null
+      },
+      "positionalError_meters": {
+        "Description": "The positional error (possible deviation from lat/long) in meters. If the data was taken with a GPS unit or phone, assumed 0 unless otherwise stated. If no specific number was given, other information about the spatial error may be recorded here.",
+        "Values": null
+      },
       "dataNotes": {
         "Description": "Notes from the dataset that could be useful. Up to your discression. Example: Adding 'County: Highland' when lat/long isnt available.",
         "Values": null
