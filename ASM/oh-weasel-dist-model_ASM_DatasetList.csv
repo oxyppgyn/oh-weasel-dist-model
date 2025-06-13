@@ -1,0 +1,24 @@
+Dataset Name,Data Collection Type,Data Type,Publicly Accessible,Year(s),Collected On
+ODNR (Diversity Database),NA/Varies,Presence-only,No,Various,NA
+ODNR (ODOW Camera Project Sightings),Traditional camera,Presence-only,No,Various,NA
+ODNR (Sightings Website Old),Sightings,Presence-only,No,Various,NA
+ODNR (Sightings Website New),Sightings,Presence-only,No,Various,NA
+GBIF,Varies,Presence-only,Yes,Various,2/13/2025
+iNaturalist,Sightings,Presence-only,Yes,Various,2/5/2025
+Vertnet (including Arctos),Varies,Presence-only,Yes,Various,6/10/2025
+Snapshot USA,Traditional camera,Presence-absence,Yes,2019-2023,6/10/2025
+Ohio Small Mammals LILA,AHDriFT,Presence-absence,Yes,2019,2/15/2025
+WildlifeInsights - UC Field Center SNAP,Traditional camera,Presence-absence,Yes,2024,2/9/2025
+WildlifeInsights - Spring Run Wetland Exploration,Traditional camera,Presence-absence,Yes,2023-2024,2/9/2025
+WildlifeInsights - Springfield Urban Gradient Camera Traps,Traditional camera,Presence-absence,Yes,2024,2/9/2025
+WildlifeInsights - Trail Cam Data,Traditional camera,Presence-absence,Yes,2022,2/15/2025
+WildlifeInsights - Mostela Boxes,Mostela boxes,Presence-absence,Yes,2024,3/1/2025
+WildlifeInsights - Tammen Reserve,Traditional camera,Presence-absence,Yes,2021,3/1/2025
+WildlifeInsights - Carnivore Coexistence,Traditional camera,Presence-absence,Yes,2021-2022,3/1/2025
+WildlifeInsights - Wild Coshocton,Traditional camera,Presence-absence,Yes,2018,3/2/2025
+WildlifeInsights - HBNC Wildlife Survey 2020-2021,Traditional camera,Presence-absence,Yes,2021,3/2/2025
+WildlifeInsights - HBNC Wildlife Survey,Traditional camera,Presence-absence,Yes,2024,3/3/2025
+WildlifeInsights - cb's place Mammal Monitoring,Traditional camera,Presence-absence,Yes,2024,3/1/2025
+WildlifeInsights - 2023 Camera Trap Lab,Traditional camera,Presence-absence,Yes,2023,3/3/2025
+Cleveland Metroparks AHDriFTs,AHDriFT,Presence-absence,No,2023-2025,Continuous Project
+Zimova Lab (Ohio University) Camera Traps,AHDriFT,Presence-absence,No,2024-2025,Continuous Project
