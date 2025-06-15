@@ -6,7 +6,7 @@ This repo covers the scripts and data used to model the distribution of long-tai
 ## Data & Documentation
 Due to some data in this dataset provided by the Ohio Department of Natural Resources and Cleveland Metroparks not being public, only part of the original dataset used for these analyses has been added to this repo. The full dataset may be available upon request. Running this analysis with a partial dataset _will_ produce differing results.
 
-Information about the data tables can be found in `oh-weasel-model_datadict.json`, which contains metadata for each field formatted as JSON.
+Information about the data tables can be found in `oh-weasel-dist-model_datadict.json`, which contains metadata for each field formatted as JSON.
 
 ## Rerun this Analysis
 All analyses were performed using R 4.4.0 via RStudio and ArcGIS Pro 3.3.0. If you are interested in using parts of the code created for this project for a different analysis using the _intSDM_ package, the code used for the American Society of Mammalogists annual meeting may be the best starting point as it was written to be more dynamic and allow for differnt datasets with minimal changes.
