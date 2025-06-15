@@ -11,7 +11,7 @@ Information about the data tables can be found in `oh-weasel-dist-model_datadict
 ## Rerun this Analysis
 All analyses were performed using R 4.4.0 via RStudio and ArcGIS Pro 3.3.0. If you are interested in using parts of the code created for this project for a different analysis using the _intSDM_ package, the code used for the American Society of Mammalogists annual meeting may be the best starting point as it was written to be more dynamic and allow for differnt datasets with minimal changes.
 
-### OU Student Expo
+### Ohio University Student Expo
 * Download the pre-generated boundary shapefile `OH_buffer_1km.shp` and covariate tiff file `OH_NLCD_Forest_2023.tif`.
 * Run the provided R notebook `oh-weasel-dist-model_Expo.Rmd` to create the iSDMs used and their related distribution maps.
 
