@@ -1,0 +1,1366 @@
+---
+title: "ASM Weasel Model 2025"
+output: html_notebook
+---
+
+# Parameters
+
+## Files
+
+`working_directory [char]`: The working directory, set with `setwd()`.
+
+`PA_obs_path [char]`: Path to presence-absence observations CSV data.
+
+`PA_locs_path [char]`: Path to presence-absence location CSV data.
+
+`PO_path [char]`: Path to presence-only CSV data.
+
+`shp_path [char]`: Path to a shapefile file boundary this project.
+
+`covar_paths [vec(name = char)]`: A named vector of paths to custom (non-WorldClim) covariates to be used. These should be raster files such as tiff images. Names represent the name of the variable represented in the file, ex: "Grassland" for a file called "Grass_NLCD2011.tif". *intSDM* models will use the file name without the extension internally, rather than the name provided in this vector.
+
+## Config
+
+`species [vec(char)]`: A vector of species to include in this analysis.
+
+`max_spatial_error [int/float]`: The maximum spatial distance error (in meters) to include. Records with values higher than this will be filtered out.
+
+`date_cutoff [char]`: The earliest date to include in this analysis (formatted as MM/DD/YYYYY). Records with values lower than this will be filtered out.
+
+`reproject [bool]`: If rasters should be reprojected into the CRS of the species data.
+
+`species_proj [int]`: The projection code to use for coordinates provided with species data. This variable must be an integer, not a string.
+
+`pred_dims [vec(int, int)]`: Dimensions (X, Y) of the output prediction map(s).
+
+`quiet_workflow [bool]`: If the *intSDM* workflow should be quieted (minimally text output).
+
+`worldclim_res [int/float]`: The resolution of WorldClim covariates. This must be one of the options available from WorldClim, which are provided in minutes. This variable must be an integer or float, not a string.
+
+`project [char]`: The name to be used for this project internally for *intSDM* processes.
+
+`seed [int]`: The seed to use for this script, used for reproducibility.
+
+## Model
+
+`model_defs [list(name = list("Custom" = vec(char), "WorldClim" = vec(char), "WorldCover" = vec(char)))]`: A nested list representing the variables included in each model to be built. The outermost list contains named lists with the name of the model. Model names are used to form file paths and must conform to the characters allowed in folder names for your system. These contain a list with three named elements, "Custom", "WorldClim", and "WorldCover" representing the three sources for variables. All three elements contain a vector of variable names that correspond to the names provided in `covar_paths` or the names of variables present in WorldClimand ESA WorldCover's datasets. If no variable from one source is used, an empty vector shout still be added in that place.
+
+The following are valid options for variables from WorldClim and WorldCover:
+
+-   WorldClim: "tmin", "tmax", "tavg", "prec", "srad", "wind", "vapr," "elev".
+
+-   WorldCover: "trees", "grassland", "shrubs", "cropland", "built", "bare", "snow", "water", "wetland", "mangroves", "moss".
+
+Example of an appropriate object:
+
+``` r
+model_defs <- list(
+  "Model1" = list(
+    "WorldClim" = c("tavg"),
+    "WorldCover" = c("trees", "grassland"),
+    "Custom" = c("Aspect")
+  ),
+  "Model2" = list(
+    "WorldClim" = c("tavg"),
+    "WorldCover" = c(),
+    "Custom" = c("Aspect")
+  )
+)
+```
+
+`model_save [list(name = c(char))]`: A named list representing the models that should have point data extracted and converted to raster file. Names correspond to the names of models defined in `model_defs`. Values are vectors of which species' raster should be extracted (note that each model produces one map per species in your project if all were indicated in `model_defs`). The underlying data is stored as points and conversion to a raster results in some (minimal) data loss. If you experience missing lines of data horizontally or vertically in the output, adjust `rast_error`.
+
+`rast_error [c(numeric, numeric)]`: The difference between the output raster's dimensions and the dimensions specified in `pred_dims`. The value specified here will be subtracted from `pred_dims`. Making a slightly smaller output raster will prevent missing lines of data in the output. For a 400x400 prediction surface, an error of only 2 cells is required.
+
+```{r}
+#Files
+working_dir <- 'C:\\Users\\Tanner\\Desktop\\ASM'
+PA_obs_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\PA_obs.csv'
+PA_locs_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\PA_locs.csv'
+PO_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\PO.csv'
+shp_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\GIS_Output\\state_buffer.shp'
+covar_paths <- list(
+  'Eastness' = 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\GIS_Output\\eastness.tif',
+  'Northness' = 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\GIS_Output\\northness.tif'
+)
+
+#Config
+species <- c("Long-tailed weasel", "Short-tailed weasel", "Least weasel")
+max_spatial_error <- 10000 #In meters
+date_cutoff <- '1/1/1970'
+reproject <- FALSE
+species_proj <- 4326
+
+pred_dims <- c(400, 400)
+quiet_workflow <- TRUE
+worldclim_res = 0.5
+project = 'ASM Weasels 2025'
+seed <- 890 #Generated from numbergenerator.org/randomnumbergenerator/1-1000
+
+#Model
+model_save <- list(
+  '-elev' = c('Long-tailed weasel'),
+  '-tavg,prec,elev,grassland,northness' = c('Short-tailed weasel'),
+  '-elev,trees,built,water,eastness' = c('Least weasel')
+)
+rast_error <- c(2, 2)
+```
+
+```{r}
+#Two copes of model_defs is declared here, one with only the "best" models for each species, and one with all models tested
+
+#Model
+model_defs <- list(
+  #Long-tailed best
+  '-elev' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  #Short-tailed best
+  '-tavg,prec,elev,grassland,northness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  #Least best
+  '-elev,trees,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Northness')
+  )
+)
+
+#Model Definitions
+model_defs <- list(
+  #All Variables
+  #c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel')
+  'allVar' = list(
+    'species' = species,
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  #Round 1: All covars, minus one
+  '-tavg' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-cropland' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-built' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-water' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-eastness' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  '-northness' = list(
+    'species' = c('Long-tailed weasel', 'Short-tailed weasel', 'Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness')
+  ),
+  #Round 2: -elev for Long-tailed
+  '-tavg,elev' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec,elev' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,trees' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,grassland' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,cropland' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,built' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,water' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,eastness' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  '-elev,northness' = list(
+    'species' = c('Long-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness')
+  ),
+  # Round 2: -grassland for Short-tailed
+  '-tavg,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland,cropland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland,built' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland,water' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland,eastness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  '-grassland,northness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness')
+  ),
+  # Round 2: -water for Least
+  '-tavg,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-cropland,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Northness')
+  ),
+  '-water,northness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland', 'built'),
+    'Custom' = c('Eastness')
+  ),
+  # Round 3: -tavg,grassland for short-tailed
+  '-tavg,prec,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,elev,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,trees,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,grassland,cropland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,grassland,built' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,grassland,water' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,grassland,eastness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  '-tavg,grassland,northness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness')
+  ),
+  # Round 3: -built,water for least weasel
+  '-tavg,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('trees', 'grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees,built,water' = list(
+    'species' = c('Least weasel'),
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c( 'grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-grassland,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-cropland,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland'),
+    'Custom' = c('Northness')
+  ),
+  '-built,water,northness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('trees', 'grassland', 'cropland'),
+    'Custom' = c('Eastness')
+  ),
+  ### Round 4: -tavg,elev,grassland for short-tailed
+  '-tavg,prec,elev,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,elev,trees,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,elev,grassland,cropland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,elev,grassland,built' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'cropland', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,elev,grassland,water' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,elev,grassland,eastness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  '-tavg,elev,grassland,northness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  #Round 4:  -trees,built,water for least
+  '-tavg,trees,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('prec','elev'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec,trees,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','elev'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,trees,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees,grassland,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees,cropland,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c('grassland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-trees,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c( 'grassland', 'cropland'),
+    'Custom' = c('Northness')
+  ),
+  '-trees,built,water,northness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec','elev'),
+    'WorldCover' = c( 'grassland', 'cropland'),
+    'Custom' = c('Eastness')
+  ),
+  
+  # Round 5: -tavg,prec,elev,grassland for short-tailed
+  '-tavg,prec,elev,trees,grassland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('cropland', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,prec,elev,grassland,cropland' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'built', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,prec,elev,grassland,built' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'cropland', 'water'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,prec,elev,grassland,water' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'cropland', 'built'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-tavg,prec,elev,grassland,eastness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Northness')
+  ),
+  '-tavg,prec,elev,grassland,northness' = list(
+    'species' = c('Short-tailed weasel'),
+    'WorldClim' = c(),
+    'WorldCover' = c('trees', 'cropland', 'built', 'water'),
+    'Custom' = c('Eastness')
+  ),
+  # Round 5: -elev,trees,built,water for least
+  '-tavg,elev,trees,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-prec,elev,trees,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,trees,grassland,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('cropland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,trees,cropland,built,water' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland'),
+    'Custom' = c('Eastness','Northness')
+  ),
+  '-elev,trees,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Northness')
+  ),
+  '-elev,trees,built,water,northness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Eastness')
+  ),
+  # Round 6: -elev,trees,built,water,eastness for least
+  '-tavg,elev,trees,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Northness')
+  ),
+  '-prec,elev,trees,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c('Northness')
+  ),
+  '-elev,trees,grassland,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('cropland'),
+    'Custom' = c('Northness')
+  ),
+  '-elev,trees,cropland,built,water,eastness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland'),
+    'Custom' = c('Northness')
+  ),
+  '-elev,trees,built,water,eastness,northness' = list(
+    'species' = c('Least weasel'),
+    'WorldClim' = c('tavg','prec'),
+    'WorldCover' = c('grassland', 'cropland'),
+    'Custom' = c()
+  )
+)
+```
+
+# Initialization
+
+## Install and Import Packages
+
+```{r message=FALSE, warning=FALSE}
+#List of Packages Used
+packages <- c('MCMCglmm','tidyverse','remotes','INLA','dplyr','lubridate','PointedSDMs','intSDM','sf','terra','ggplot2','stringr','ggregplot')
+
+#Check if Installed, Install if Not -- Import Regardless
+for (pkg in packages) {
+  if (!(require(pkg, character.only = TRUE))) {
+    if (pkg == 'INLA') {
+      install.packages(
+        'INLA',
+        repos = c(
+          getOption("repos"),
+          INLA = "https://inla.r-inla-download.org/R/stable"
+        ), 
+        dep = TRUE
+      )
+    } else if (pkg == 'ggregplot') {
+      remotes::install_github("gfalbery/ggregplot")
+    } else {
+      install.packages(pkg)
+    }
+    
+    library(pkg, character.only = TRUE)
+  }
+}
+
+remove(packages, pkg)
+```
+
+## Set Seed and Working Directory
+
+```{r}
+#Set Seed
+set.seed(seed)
+
+#Set Working Directory
+setwd(working_dir)
+```
+
+# Data Formatting
+
+## Read in Datasets
+
+```{r}
+PA_obs <- read.csv(file = PA_obs_path) 
+PA_locs <- read.csv(file = PA_locs_path) 
+PO <- read.csv(file = PO_path)
+```
+
+```{r}
+#Fix Column Types
+PO$date <- lubridate::mdy(PO$date)
+PA_obs$date <- lubridate::mdy(PA_obs$date)
+PA_obs$date2 <- lubridate::mdy(PA_obs$date2)
+PA_locs$setDate <- lubridate::mdy(PA_locs$setDate)
+PA_locs$retrieveDate <- lubridate::mdy(PA_locs$retrieveDate)
+
+#Create Generalized ID
+## Accounts for reused names between projects
+## Seperate with "::" incase it needs split later
+PA_obs$ID <- paste0(PA_obs$dataSource, "::", PA_obs$camera_site, '::', PA_obs$deployment)
+PA_locs$ID <- paste0(PA_locs$dataSource, "::", PA_locs$camera_site, '::', PA_locs$deployment)
+
+#Create Year Field
+PO$year <- lubridate::year(PO$date)
+PA_obs$year <- lubridate::year(PA_obs$date)
+```
+
+## Filter
+
+```{r}
+#Presence-only Data
+PO <- PO |>
+  filter(
+    !is.na(latitude), # Rem NULL latitude
+    !is.na(longitude), # Remo NULL longitude
+    species %in% .env$species, # Rem "Unknown" records
+    positionalError_meters < max_spatial_error, #Rem Large Spatial Error
+    !(is.na(positionalError_meters)), #Rem Unknown Error
+    !('S' %in% positionalError_meters), #Rem Unknown Error
+    !(dataNotes %in% c('Quality Grade: needs_id','Quality Grade: casual')), #Rem iNat non-Research Grade
+    date > mdy(date_cutoff) #Remove dates before Cutoff
+  )
+
+#Presence-Absence Data
+PA_obs <- PA_obs |>
+  filter(
+    species %in% .env$species, #Rem "Unknown" records
+  ) 
+  
+PA_locs <- PA_locs |>
+  filter(
+    locFuzz == 0, #Rem fuzzed locations
+    positionalError_meters < max_spatial_error, #Rem Large Spatial Error
+    !(is.na(positionalError_meters)), #Rem Unknown Error
+  )
+```
+
+## Copy Columns for Presence-Absence Data
+
+```{r}
+#Copy Locational Data Columns to Presence-Absence Observations
+PA_obs <- merge(
+  x = PA_obs, 
+  y = PA_locs[,c('ID','camType','latitude','longitude')], 
+  by = 'ID', 
+  all.x = TRUE
+)
+```
+
+## Save Copy of Datasets After Filter
+
+```{r}
+write.csv(
+  PO,
+  file = paste0(
+    working_dir, '\\', 
+    project, '\\', 
+    'PO_filter.csv'
+  )
+)
+
+write.csv(
+  PA_obs,
+  file = paste0(
+    working_dir, '\\', 
+    project, '\\', 
+    'PA_filter.csv'
+  )
+)
+```
+
+## Create Occupancy Matrix
+
+```{r}
+#Convert to Long Format
+PA_long <- PA_obs |>
+  group_by(ID, date, species) |>
+  summarize(count = n()) |>
+  ungroup()
+```
+
+```{r}
+#Create Columns for All Dates
+##Get List of All Dates in Range
+dates <- as.character(
+  seq(
+    min(PA_locs$setDate), 
+    max(PA_locs$retrieveDate), 
+    by = 'days'
+  )
+)
+
+##Get List of Sites
+sites <- unique(PA_locs$ID)
+
+##Initialize DF
+PA_occu <- data.frame(matrix(ncol = 8))
+
+##Add Columns and Row Value
+colnames(PA_occu) <- c('ID','date','day_num','species','detection','latitude','longitude', 'camType')
+```
+
+```{r}
+#Create Matrix
+for (i in 1:nrow(PA_locs)) {
+  for (sp in species) {
+    ##Get List of Days Camera was Active
+    dep_days <- as.character(
+      seq(
+        PA_locs[i,'setDate'],
+        PA_locs[i,'retrieveDate'],
+        by = 'days'
+        )
+    )
+    
+    ##Get Days with Observations for ID + Species
+    det_days <- filter(
+      PA_long, PA_long$ID == PA_locs[i, 'ID'] & PA_long$species == sp)$date
+    
+    ##Create Boolean Detection Values
+    if (length(det_days) > 0) {
+      occu_days <- ifelse(dep_days %in% det_days, 1, 0)
+    } else {
+      occu_days <- rep(0, length(dep_days))
+    }
+
+    ##Create DF
+    x <- data.frame(
+      ID = rep(PA_locs[i, 'ID'][[1]], length(dep_days)),
+      date = dep_days,
+      day_num = 1:length(dep_days),
+      species = rep(sp, length(dep_days)),
+      detection = occu_days,
+      latitude = rep(PA_locs[i, 'latitude'][[1]], length(dep_days)),
+      longitude = rep(PA_locs[i, 'longitude'][[1]], length(dep_days)),
+      camType = rep(PA_locs[i, 'camType'][[1]], length(dep_days))
+    )
+    
+    ##Add DF to DF
+    PA_occu <- bind_rows(PA_occu, x)
+  }
+}
+
+#Remove Empty First Row
+PA_occu <- PA_occu[-c(1),] 
+
+#Save Data
+write.csv(
+  PA_occu,
+  file = paste0(
+    working_dir, '\\', 
+    project, '\\', 
+    'PA_occu_filter.csv'
+  )
+)
+
+remove(x, occu_days, dep_days, det_days, i, sp, dates, sites)
+```
+
+## Format Spatial Data
+
+```{r}
+#Add Boundary
+shp <- st_read(shp_path)
+
+#Convert Presence Data to ST
+PO <- st_as_sf(x = PO, coords = c('longitude','latitude'), crs = crs(paste0("+init=epsg:",species_proj)))
+PA_occu <- st_as_sf(x = PA_occu, coords = c('longitude','latitude'), crs = crs(paste0("+init=epsg:",species_proj)))
+
+##Change Reference to WGS84
+if (crs(shp) != crs("+init=epsg:4326")) {
+  shp <- st_transform(shp, crs("+init=epsg:4326"))
+}
+if (crs(PO) != crs("+init=epsg:4326")) {
+  PO <- st_transform(PO, crs("+init=epsg:4326"))
+}
+if (crs(PA_occu) != crs("+init=epsg:4326")) {
+  PA_occu <- st_transform(PO, crs("+init=epsg:4326"))
+}
+
+#Load Rasters
+rasters <- list()
+index <- 1
+
+##Get Rasters as Rast Objects
+for (var in covar_paths) {
+  ### Add Obj to Raster List
+  rasters[[names(covar_paths)[index]]] <- scale(terra::rast(var))
+  names(rasters[[index]]) <- names(covar_paths)[[index]]
+  
+  ### Reproject
+  if (reproject == TRUE) {
+    cat('\n----- Reprojecting Raster-----\n')
+    rasters[[index]] <- terra::project(x = rasters[[index]], crs(paste0("+init=epsg:", species_proj)))
+  }
+  ###Update Index
+  index <- index + 1
+  
+}
+```
+
+# *intSDM* Model Workflow
+
+```{r message=FALSE}
+#Create Main Folder for Files
+dir.create(
+  path = paste0(working_dir, '\\', project), 
+  showWarnings = FALSE
+)
+dir.create(
+  path = paste0(working_dir, '\\', project, '\\', 'Model_Files'), 
+  showWarnings = FALSE
+)
+
+#Loop through Model Definitions
+i <- 1
+for (model in model_defs) {
+  skip <- FALSE
+  
+  #Check if Model Was Already Run
+  ##Folder Exists
+  if (dir.exists(paste0(working_dir, '\\', project, '\\', 'Model_Files', '\\', names(model_defs)[[i]]))) {
+    skip <- TRUE
+    
+    ##Don't Skip if No Folders in Model Dir
+    if (length(list.dirs(paste0(working_dir, '\\', project, '\\', 'Model_Files', '\\', names(model_defs)[[i]]), recursive = FALSE)) == 0) {
+      skip <- FALSE
+    }
+    
+    ##Check Number of Files in Each Folder
+    for (folder in list.dirs(paste0(working_dir, '\\', project, '\\', 'Model_Files', '\\', names(model_defs)[[i]]), recursive = FALSE)) {
+      ##If Any != 4, Don't Skip
+      if (length(list.files(folder)) != 4) {
+        skip <- FALSE
+      }
+    }
+  }
+      
+  #Skip Model if Indicated
+  if (skip == TRUE) {
+    cat('\n----- Results for model: "', names(model_defs)[[i]], '" already exist. Skipping to next model. -----\n', sep = '')
+    i <- i + 1
+    next
+  }
+  
+  #Start Workflow
+  cat('\n-------------------- Starting Workflow... --------------------\n')
+  cat('Model Name:', names(model_defs)[[i]], '\n')
+  workflow <- startWorkflow(
+    Projection =  "+proj=longlat +ellps=WGS84",
+    Species = model_defs[[i]][['species']],
+    saveOptions = list(projectName = project), 
+    Save = TRUE,
+    Quiet = quiet_workflow
+  )
+
+  ##Add Boundary
+  cat('\n----- Adding Boundary... -----\n')
+  workflow$addArea(Object = shp)
+  
+  ##Set Model Workflow Outputs
+  cat('\n----- Setting Workflow Outputs... -----\n')
+  workflow$workflowOutput(c('Model','Maps', 'Cross-validation'))
+
+  #Add Occurence Data
+  ##Presence-Only
+  cat('\n----- Adding Presence-Only Data... -----\n')
+  workflow$addStructured(
+    dataStructured = PO,
+    datasetType = 'PO',
+    speciesName = 'species',
+    generateAbsences = TRUE
+  )
+  
+  ##Presence-Absence
+  cat('\n----- Adding Presence-Absence Data... -----\n')
+  workflow$addStructured(
+    dataStructured = PA_occu,
+    datasetType = 'PA',
+    speciesName = 'species',
+    responseName = 'detection',
+    trialsName ='day_num'
+  )
+
+  #Add Custom Covariates
+  if (length(model$Custom) > 0) {
+    cat('\n----- Adding Custom Covariates... -----\n')
+    index = 1
+    for (var in model$Custom) {
+      cat('Adding Variable:', model$Custom[[index]], '\n')
+      workflow$addCovariates(Object = rasters[[var]], Function = scale)
+      
+      index <- index + 1
+    }
+  } else {
+    cat('\nNo Custom Covariates Added.\n')
+  }
+
+  #Add WorldClim Covariates
+  if (length(model$WorldClim) > 0) {
+    cat('\n----- Adding WorldClim Covariates... -----\n')
+    index <- 1
+    for (var in model$WorldClim) {
+      cat('Adding Variable:', model$WorldClim[[index]], '\n')
+      workflow$addCovariates(
+        worldClim = var, 
+        res = worldclim_res, 
+        Function = scale
+        )
+      index <- index + 1
+    }
+  } else {
+    cat('\nNo WorldClim Covariates Added.\n')
+  }
+  
+  #Add WorldCover Covariates
+  if (length(model$WorldCover) > 0) {
+    cat('\n----- Adding WorldCover Covariates... -----\n')
+    index <- 1
+    for (var in model$WorldCover) {
+      cat('Adding Variable:', model$WorldCover[[index]], '\n')
+      workflow$addCovariates(
+        landCover = var,
+        Function = scale
+        )
+      index <- index + 1
+    }
+  } else {
+    cat('\nNo WorldCover Covariates Added.\n')
+  }
+
+  #Add Mesh
+  cat('\n----- Adding Mesh... -----\n')
+  workflow$addMesh(
+    cutoff = 0.2 * 5,
+    max.edge = c(0.1, 0.24) * 80,
+    offset = c(0.1, 0.4) * 100
+  )
+  
+  #Specify Priors
+  cat('\n----- Specifying Priors... -----\n')
+  workflow$specifySpatial(
+    prior.range = c(30, 0.1),
+    prior.sigma = c(1, 0.1)
+  )
+  
+  workflow$specifyPriors(
+    effectNames = 'Intercept', 
+    Mean = 0, 
+    Precision = 1
+  )
+  
+  #Cross Validation
+  cat('\n----- Cross Validating... -----\n')
+  workflow$crossValidation(
+    Method = 'spatialBlock',  
+    blockOptions = list(
+      k = 4, 
+      rows_cols = c(20, 20), 
+      plot = TRUE, 
+      seed = seed
+    ),
+    blockCVType = 'Predict' 
+  )
+  
+  #Create Model
+  cat('\n----- Finalizing Model... -----\n')
+  sdmWorkflow(
+    workflow, 
+    inlaOptions = list(
+      num.threads = 1,
+      control.inla = list(
+        int.strategy = 'ccd',
+        h = 1e-4,
+        cmin = 0,
+        control.vb=list(
+          enable = FALSE
+        )
+      ),
+      control.compute = list(
+        return.marginals.predictor = TRUE
+        ),
+        safe = TRUE,
+        verbose = !(quiet_workflow),
+        inla.mode = 'experimental'
+      ),
+    predictionDim = pred_dims,
+    ipointsOptions = list(method = 'direct')
+  )
+  
+  #Copy RDS Files to New Folder
+  cat('\n----- Moving Saved Files to New Dir... -----\n')
+  
+  ##Create Folder for Current Model
+  dir.create(
+    path = paste0(working_dir, '\\', project, '\\', 'Model_Files', '\\', names(model_defs)[[i]]), 
+    showWarnings = FALSE
+  )
+  
+  for (sp in model_defs[[i]][['species']]) {
+    from_folder <- paste0(working_dir, '\\', project, '\\', gsub(' ', '_', sp))
+    to_folder <- paste0(working_dir, '\\', project, '\\', 'Model_Files', '\\', names(model_defs)[[i]], '\\', gsub(' ', '_', sp))
+    
+    ##Create Species Folders
+    dir.create(
+      path = paste0(working_dir, '\\', project, '\\', 'Model_Files', '\\', names(model_defs)[[i]], '\\', gsub(' ', '_', sp)), 
+      showWarnings = FALSE
+    )
+  
+    ##Rename (Move) Files
+    for (f in c('intModel.rds', 'Predictions.rds', 'spatialBlock.rds', 'Map.png')) {
+      file.rename(
+        from = paste0(from_folder, '\\', f), 
+        to = paste0(to_folder, '\\',f)
+      )
+    }
+  }
+  
+  #Update Index
+  i <- i + 1
+  
+  #Attempt to Free Some Memory
+  gc(full = TRUE, verbose = FALSE)
+}
+
+#Clean Up Temporary Objects
+remove(i, index, skip, var, f, model)
+```
+
+# Model Statistics
+
+```{r}
+#Get a List of Folders to Look In
+RDS_files <- list(
+  c(), #paths
+  c(), #model name
+  c()  #species
+)
+
+for (model in names(model_defs)) {
+  for (sp in model_defs[[model]][['species']]) {
+  
+    ##Get Path of File
+    path <- paste0(
+      working_dir, '\\', 
+      project, '\\', 
+      'Model_Files', '\\', 
+      model, '\\', 
+      gsub(' ', '_', sp), '\\', 
+      'intModel.rds')
+    
+    ##Add to File List
+    RDS_files[[1]] <- append(RDS_files[[1]], path)
+    RDS_files[[2]] <- append(RDS_files[[2]], model)
+    RDS_files[[3]] <- append(RDS_files[[3]], sp)
+  }
+}
+
+#Read Each File and Get Statistics
+stats_df = c()
+for (i in 1:length(RDS_files[[1]])) {
+  ##Check that File Exists
+  if (!(file.exists(RDS_files[[1]][[i]]))) {
+    warning(paste0('The file ', RDS_files[[1]][[i]], ' does not exist. Skipping...'))
+    cat('\n')
+    next
+  }
+  
+  ##Read File
+  RDS_data <- readRDS(RDS_files[[1]][[i]])
+  
+  stats <- c(
+    
+    ### General Info
+    'model' = c(RDS_files[[2]][[i]]),
+    'species' = c(RDS_files[[3]][[i]]),
+    'covariates' = c(paste(RDS_data$spatCovs$name, collapse = ', ')),
+    
+    ### WAIC
+    'WAIC' = c(RDS_data$waic$waic),
+    'WAIC_p.eff' = c(RDS_data$waic$p.eff),
+    #'WAIC_marginals.linear.predictor' = c(RDS_data$marginals.linear.predictor),
+    
+    ### DIC
+    'DIC' = c(RDS_data$dic$dic),
+    'DIC_p.eff' = c(RDS_data$dic$p.eff),
+    'DIC_mean.deviance' = c(RDS_data$dic$mean.deviance),
+    'DIC_deviance.mean' = c(RDS_data$dic$deviance.mean),
+    
+    ### Log marginal-likelihood
+    'log.marginal.likelihood' = c(RDS_data$mlik[[1]]),
+    
+    ### RSS
+    'RSS' = sum(RDS_data$residuals$deviance.residuals ** 2)
+  )
+  
+  ##Fix Excel Display Issue
+  if (startsWith(RDS_files[[2]][[i]],'-')) {
+    stats[['model']] <- paste0("'", RDS_files[[2]][[i]])
+  }
+  
+  ##Append to Dataset
+  if (length(stats_df) == 0) {
+    stats_df <- data.frame(t(data.frame(stats)))
+  } else {
+    stats_df <- rbind(stats_df, data.frame(t(data.frame(stats))))
+  }
+}
+
+#Write Data to CSV
+write.csv(x = stats_df, file = paste0(working_dir, '\\', project, '\\','Model_stats.csv'))
+
+#Clean Up
+remove(sp, i, stats, RDS_data, RDS_files)
+```
+
+# Save Rasters
+
+```{r}
+for (model in names(model_save)) {
+  for (sp in model_save[[model]]) {
+    #Read RDS Data
+    RDS_file <- paste0(
+      working_dir, '\\', 
+      project, '\\', 
+      'Model_Files', '\\', 
+      model, '\\', 
+      gsub(' ', '_', sp), '\\', 
+      'predictions.rds')
+    
+    RDS_data <- readRDS(RDS_file)
+    predictions <- RDS_data$predictions
+    class(predictions) <- c('sf', 'data.frame')
+    
+    
+    #Convert Points to Raster
+    preds <- terra::vect(predictions)
+    rast <- terra::rast(
+      preds, 
+      ncols = pred_dims[1]-rast_error[[1]], 
+      nrows = pred_dims[2]-rast_error[[2]]
+    )
+    rast <- raster::rasterize(preds, rast, field = 'mean')
+  
+    #Save Raster
+    raster::writeRaster(x = rast, filename = paste0(working_dir, '\\', project, '\\', model, '__', sp, '__predictData.tif'), overwrite = TRUE)
+  }
+}
+
+#Clean Up
+remove(sp, model,preds, rast)
+```
+
+# Plots
+
+### Collect Data
+
+```{r}
+model_list <- list()
+
+i <- 1
+for (model in names(model_save)) {
+  for (sp in model_save[[model]]) {
+    #Read RDS File
+    RDS_file <- paste0(
+      working_dir, '\\', 
+      project, '\\', 
+      'Model_Files', '\\', 
+      model, '\\', 
+      gsub(' ', '_', sp), '\\', 
+      'intModel.rds')
+    
+    RDS_data <- readRDS(RDS_file)
+    
+    #Save Models to One Object
+    model_list[[i]] <- RDS_data
+
+    i <- i + 1
+  }
+}
+
+#Clean Up
+remove(i, RDS_data, RDS_file)
+```
+
+### Effect Sizes Plot
+
+```{r}
+#Get Initial Plot's Data
+effsz <- ggregplot::Efxplot(
+  #Long, short, least in order
+  ModelList = rev(model_list),
+  ModelNames = c('Least', 'Short-tailed','Long-tailed'),
+  VarOrder = c('water','built','cropland','grassland','trees','Northness', 'Eastness','prec','tavg'))$data
+
+# Set Distances for Signfigance Stars by Species
+mapping <- c('Long-tailed' = 8, 'Short-tailed' = 15, 'Least' = 1)
+effsz$starloc <- mapping[effsz$Model]
+
+#Create Plot
+effsz_plt <- ggplot(effsz, aes(x=Estimate, y=Factor, color=Sig)) +
+  theme_gray() +
+  geom_point() + 
+  geom_errorbar(aes(xmin = Lower, xmax = Upper, width = 0.3)) +
+  facet_grid(~Model, scales = 'free')  +
+  scale_color_manual(values=c("black", "brown3")) +
+  scale_y_discrete(labels = c('Water','Urban','Cropland','Grassland','Forest','Northness', 'Eastness','Precipitation','Temperature')) +
+  geom_vline(xintercept = 0, linetype = 'longdash') +
+  geom_hline(yintercept = 5.5, linetype = 'dotted') +
+  #geom_text(aes(label = Sig, x = starloc), size = 6, nudge_y = -0.15, color = '#000000') +
+  theme(panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank(), axis.title.y = element_blank(), legend.position = 'none') +
+  labs(x = 'Effect Size')
+  #------------------------------------
+  #facetted_pos_scales(x = list(scale_x_continuous()))
+
+#Save Plot
+ggsave(
+  filename = paste0(
+    working_dir, '\\', 
+    project, '\\', 
+    'effect_size.png'
+  ),
+  plot = effsz_plt,
+  dpi = 600,
+  width = 6,
+  height = 4
+)
+
+write.csv(effsz, file = paste0(
+  working_dir, '\\', 
+  project, '\\', 'effect_sizes.csv')
+)
+
+effsz_plt
+```
