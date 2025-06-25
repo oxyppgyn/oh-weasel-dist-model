@@ -1,6 +1,8 @@
 ---
 title: "ASM Weasel Model 2025"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 # Parameters
@@ -74,14 +76,14 @@ model_defs <- list(
 
 ```{r}
 #Files
-working_dir <- 'C:\\Users\\Tanner\\Desktop\\ASM'
-PA_obs_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\PA_obs.csv'
-PA_locs_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\PA_locs.csv'
-PO_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\PO.csv'
-shp_path <- 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\GIS_Output\\state_buffer.shp'
+working_dir <- 'C:\\path\\to\\ASM'
+PA_obs_path <- 'C:\\path\\to\\ASM\\PA_obs.csv'
+PA_locs_path <- 'C:\\path\\to\\ASM\\PA_locs.csv'
+PO_path <- 'C:\\path\\to\\ASM\\PO.csv'
+shp_path <- 'C:\\path\\to\\ASM\\state_buffer.shp'
 covar_paths <- list(
-  'Eastness' = 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\GIS_Output\\eastness.tif',
-  'Northness' = 'C:\\Users\\Tanner\\Desktop\\ASM\\Data\\GIS_Output\\northness.tif'
+  'Eastness' = 'C:\\path\\to\\ASM\\eastness.tif',
+  'Northness' = 'C:\\path\\to\\ASM\\\\northness.tif'
 )
 
 #Config
