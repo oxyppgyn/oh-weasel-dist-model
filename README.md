@@ -27,6 +27,6 @@ All analyses were performed using R 4.4.0 via RStudio and ArcGIS Pro 3.3.0. If y
 
   * In box 3A ("Raster Visualization") check "Aspect".
   * Click the submit button at the bottom of the page and wait for your download.
-* Run the provided Python notebook `oh-weasel-dist-model_ASM.ipynb` to create raster and polygon layers used in this analysis. This uses _arcPy_ through ArcGIS Pro, but the same processes could be done through R's geospatial libraries as well.
+* Run the provided Python notebook `oh-weasel-dist-model_ASM.ipynb` to create raster and polygon layers used in this analysis. This uses _arcPy_ through ArcGIS Pro, but the same processes could be done relatively easily through R's geospatial libraries as well.
 * Run the provided R notebook `oh-weasel-dist-model_ASM.Rmd` to create the iSDMs used and their related distribution maps.
 
