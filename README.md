@@ -4,7 +4,7 @@
 This repo covers the scripts and data used to model the distribution/habitat suitability of long-tailed, short-tailed, and least weasels in the state of Ohio. Multiple versions of this project are included here such as preliminary modeling efforts presented at the Ohio University Student Expo ([PDF](https://github.com/oxyppgyn/oh-weasel-dist-model/blob/b1d665f112f0b6d399843dc565a8ef20387e6f89/OUStudentExpo/oh-weasel-dist-model_Poster_Expo.pdf)) and the American Society of Mammalogists Annual Meeting ([PDF](https://github.com/oxyppgyn/oh-weasel-dist-model/blob/91d631e96cbdc7e52ed8156262d2f6d122afc1b7/ASM/oh-weasel-dist-model_Poster_ASM.pdf)).
 
 ## Data & Documentation
-Due to some data in this dataset provided by the Ohio Department of Natural Resources and Cleveland Metroparks not being public, only part of the original dataset used for these analyses has been added to this repo. The full dataset may be available upon request. Running this analysis with a partial dataset _will_ produce differing results.
+Due to some data in this dataset provided by the Ohio Department of Natural Resources and Cleveland Metroparks not being public, only part of the original dataset used for these analyses has been added to this repo. The full dataset may be available upon request. Running this analysis with a partial dataset _will_ produce differing results. After filtering, the datasets between both iterations (OU Student Expo and ASM) are the same, but are included twice in their respective folders.
 
 Information about the data tables can be found in `oh-weasel-dist-model_datadict.json`, which contains metadata for each field formatted as JSON.
 
